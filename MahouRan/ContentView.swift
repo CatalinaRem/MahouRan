@@ -12,7 +12,6 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            ZStack {
                 ZStack {
                     mainColor
                     Image("MahouRanLogo2")
@@ -22,19 +21,16 @@ struct ContentView: View {
                 }
                 .frame(height: 150)
                 .ignoresSafeArea()
-            }
-
-            Color.white.opacity(0.0)
-            HStack {
-                Text("Home")
-                    .font(.system(size: 20, weight: .bold, design: .default))
-                    .foregroundStyle(.white)
-            }
-            .frame(width: 500, height: 50)
-            .background(mainColor)
-            
         }
-        .background(mahouranBackgroundColor)
+            TabView
+        {
+            Text("Tab 1")
+            Text("Tab 2")
+            Text("Tab 3")
+        }
+        .onAppear() {
+            UITabBar.appearance().backgroundColor = UIColor(mainColor)
+        }
     }
     
 }
