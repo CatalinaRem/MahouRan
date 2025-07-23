@@ -29,9 +29,22 @@
 		863D669B2E0FEB3300DA3698 /* MahouRanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MahouRanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		868C02E02E3085CC00000E00 /* Exceptions for "MahouRan" folder in "MahouRan" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			platformFiltersByRelativePath = {
+				ContentView.swift = (ios, );
+			};
+			target = 863D66832E0FEB3200DA3698 /* MahouRan */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		863D66862E0FEB3200DA3698 /* MahouRan */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				868C02E02E3085CC00000E00 /* Exceptions for "MahouRan" folder in "MahouRan" target */,
+			);
 			path = MahouRan;
 			sourceTree = "<group>";
 		};

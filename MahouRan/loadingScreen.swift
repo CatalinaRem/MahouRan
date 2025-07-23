@@ -7,7 +7,10 @@
 
 import SwiftUI
 
-let manhouranMainColor = Color(red: 212/255, green: 96/255, blue: 207/255)
+
+let startColor = Color(hex: "#D460CF")
+let mahouranBackgroundColor = Color(hex: "#EAD7F6")
+let mainColor = Color(hex: "#DF83DB")
 
 struct loadingScreen: View {
     var body: some View {
@@ -18,7 +21,7 @@ struct loadingScreen: View {
                 .frame(width: 400, height: 400)
                 .padding()
         }
-        .background(manhouranMainColor)
+        .background(startColor)
         .ignoresSafeArea(edges: .all)
     }
 }

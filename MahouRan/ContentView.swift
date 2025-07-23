@@ -8,15 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            ZStack {
+                ZStack {
+                    mainColor
+                    Image("MahouRanLogo2")
+                        .scaledToFit()
+                        .frame(width: 200, height: 100)
+                        .padding(.top, 35.0)
+                }
+                .frame(height: 150)
+                .ignoresSafeArea()
+            }
+
+            Color.white.opacity(0.0)
+            HStack {
+                Text("Home")
+                    .font(.system(size: 20, weight: .bold, design: .default))
+                    .foregroundStyle(.white)
+            }
+            .frame(width: 500, height: 50)
+            .background(mainColor)
+            
         }
-        .padding()
+        .background(mahouranBackgroundColor)
     }
+    
 }
 
 #Preview {
