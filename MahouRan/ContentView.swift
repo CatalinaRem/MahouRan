@@ -24,13 +24,19 @@ struct ContentView: View {
         }
             TabView
         {
-            Text("Tab 1")
-            Text("Tab 2")
-            Text("Tab 3")
+            Text("Main")
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            Text("Member")
+                .tabItem {
+                    Label("Member", systemImage: "creditcard")
+                }
         }
         .onAppear() {
             UITabBar.appearance().backgroundColor = UIColor(mainColor)
         }
+        .tint(Color.yellow)
     }
     
 }
