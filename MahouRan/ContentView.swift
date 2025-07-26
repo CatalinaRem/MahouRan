@@ -11,17 +11,22 @@ struct ContentView: View {
     
     
     var body: some View {
-        VStack {
+        HStack {
                 ZStack {
                     mainColor
                     Image("MahouRanLogo2")
                         .scaledToFit()
-                        .frame(width: 200, height: 100)
-                        .padding(.top, 35.0)
+                        .frame(height: 100)
                 }
-                .frame(height: 150)
-                .ignoresSafeArea()
+                .frame(height: 100)
+            
+            //Text("Blue Mode")
+            
         }
+        .background(mainColor)
+        
+        //
+        
             TabView
         {
             Text("Main")
@@ -31,6 +36,14 @@ struct ContentView: View {
             Text("Member")
                 .tabItem {
                     Label("Member", systemImage: "creditcard")
+                }
+            Text("Notification")
+                .tabItem{
+                    Label("Notification", systemImage: "bell")
+                }
+            Text("Account")
+                .tabItem {
+                    Label("Account", systemImage: "person.circle")
                 }
         }
         .onAppear() {
