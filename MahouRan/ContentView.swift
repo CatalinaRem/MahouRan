@@ -20,12 +20,11 @@ struct ContentView: View {
                 }
                 .frame(height: 100)
             
-            //Text("Blue Mode")
+            //Blue Mdoe Button for Mahou Ran Blue
             
         }
         .background(mainColor)
         
-        //
         
             TabView
         {
