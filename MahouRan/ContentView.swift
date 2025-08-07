@@ -20,7 +20,7 @@ struct ContentView: View {
                 }
                 .frame(height: 100)
             
-            //Blue Mdoe Button for Mahou Ran Blue
+            //Blue Mode Button for Mahou Ran Blue
             
         }
         .background(mainColor)
