@@ -1,8 +1,23 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Account" : {
+
+    },
+    "Home" : {
+
+    },
     "Key" : {
       "extractionState" : "manual"
+    },
+    "Main" : {
+
+    },
+    "Member" : {
+
+    },
+    "Notification" : {
+
     }
   },
   "version" : "1.1"
