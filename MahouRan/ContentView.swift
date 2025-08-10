@@ -28,7 +28,7 @@ struct ContentView: View {
         
             TabView
         {
-            Text("Main")
+            homePurple()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }

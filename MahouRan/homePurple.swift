@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct homePurple: View {
+    var username : String = "Aqua"
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Welcome back, \(username) Senpai!!")
+            HStack {
+                ZStack {
+                    Image("Pui")
+                    Text("Pippo")
+                }
+            }
+        }
     }
 }
 
