@@ -18,6 +18,7 @@
             endingLineNumber = "15"
             landmarkName = "body"
             landmarkType = "24">
+<<<<<<< HEAD
             <Locations>
                <Location
                   uuid = "93785267-5A22-41AC-99EA-0FBD65FA57EE - 49ecbf7f35158774"
@@ -48,6 +49,8 @@
                   endingLineNumber = "15">
                </Location>
             </Locations>
+=======
+>>>>>>> e4f6a00d04cea4b5f477d42a739c789d966a59fc
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
