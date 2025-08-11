@@ -7,16 +7,27 @@
 
 import SwiftUI
 
-struct homePurple: View {
-    var username : String = "Aqua"
+struct HomePurple: View {
+    @State private var showProfile = false
+
     var body: some View {
-        VStack {
-            Text("Welcome back, \(username) Senpai!!")
-            MageCard(image: pippo.image, nameEnglish: pippo.nameEnglish)
+        NavigationStack {
+            VStack {
+                MageCard(
+                    image: pippo.image,
+                    nameEnglish: pippo.nameEnglish
+                ) {
+                    showProfile = true
+                }
+            }
+            .navigationDestination(isPresented: $showProfile) {
+                MageProfile()
+            }
         }
     }
 }
 
+
 #Preview {
-    homePurple()
+    HomePurple()
 }

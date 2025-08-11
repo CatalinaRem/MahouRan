@@ -8,7 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    struct TopBar: View {
+        var body: some View {
+            HStack {
+                Spacer()
+                Image("MahouRanLogo2")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 80)
+                Spacer()
+            }
+            .frame(height: 100)
+            .background(mainColor)
+            .overlay(Divider(), alignment: .bottom)
+        }
+    }
     
     var body: some View {
         HStack {
@@ -27,7 +41,7 @@ struct ContentView: View {
         .frame(height: 100)
             TabView
         {
-            homePurple()
+            HomePurple()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }

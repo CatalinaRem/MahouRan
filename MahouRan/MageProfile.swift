@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-// 🔝 แถบโลโก้ติดบนสุด
 struct TopBar: View {
     var body: some View {
         HStack {
@@ -25,11 +24,12 @@ struct TopBar: View {
 }
 
 struct MageProfile: View {
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 Button {
-                    print(">>> Button tapped <<<")
+                    dismiss()
                 } label: {
                     Label("Back", systemImage: "arrow.backward")
                 }
@@ -40,9 +40,28 @@ struct MageProfile: View {
             }
             .padding(.horizontal, 16)
             .padding(.bottom, 24)
+            HStack {
+                Image(pippo.image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 120, height: 120)
+                    .cornerRadius(.infinity)
+                VStack(alignment: .leading) {
+                    Text(pippo.nameEnglish)
+                        .font(.system(size: 30, weight: .bold, design: .default))
+                    HStack
+                    {
+                        Text(pippo.nameThai)
+                        Text(pippo.nameJapanese)
+                    }
+                }
+                .frame(maxWidth: 250, alignment: .leading)
+            }
         }
+        .toolbar(.hidden, for: .navigationBar)
         .background(Color(.systemBackground))
-        .safeAreaInset(edge: .top) {
+        .safeAreaInset(edge: .top)
+        {
             TopBar()
         }
     }

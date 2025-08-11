@@ -36,5 +36,6 @@ struct MageCard: View {
                 }
         }
         .buttonStyle(PlainButtonStyle())
+        .contentShape(RoundedRectangle(cornerRadius: 12))
     }
 }
