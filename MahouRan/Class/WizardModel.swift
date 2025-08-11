@@ -1,5 +1,5 @@
 //
-//  WitchModel.swift
+//  WizardModel.swift
 //  MahouRan
 //
 //  Created by Catalina Rem on 10/8/25.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-class WitchModel: MageModel, ObservableObject {
-    @Published var nameJapanese: String
-    @Published var quote: String
-    @Published var favoriteMenu: [String]
-    let isFemale: Bool = true
+
+class WizardModel: MageModel, ObservableObject {
+    @Published var dislike: String?
+    @Published var snack: String
+    let isMale: Bool = true
 
     init(id: UUID = UUID(),
          nameThai: String,
@@ -20,14 +20,12 @@ class WitchModel: MageModel, ObservableObject {
          magicClass: String? = nil,
          birthDate: String,
          height: Int? = nil,
-         mbti: String,
+         mbti: MBTI,
          interests: [String],
-         nameJapanese: String,
-         quote: String,
-         favoriteMenu: [String]) {
-        self.nameJapanese = nameJapanese
-        self.quote = quote
-        self.favoriteMenu = favoriteMenu
+         dislike: String? = nil,
+         snack: String) {
+        self.dislike = dislike
+        self.snack = snack
         super.init(id: id,
                    nameThai: nameThai,
                    nameEnglish: nameEnglish,
@@ -35,7 +33,7 @@ class WitchModel: MageModel, ObservableObject {
                    magicClass: magicClass,
                    birthDate: birthDate,
                    height: height,
-                   mbti: mbti,
+                   mbti: mbti.rawValue,
                    interests: interests)
     }
 }

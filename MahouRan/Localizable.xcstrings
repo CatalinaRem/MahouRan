@@ -7,16 +7,16 @@
     "Home" : {
 
     },
-    "Key" : {
-      "extractionState" : "manual"
-    },
-    "Main" : {
-
-    },
     "Member" : {
 
     },
     "Notification" : {
+
+    },
+    "Pippo" : {
+
+    },
+    "Welcome back, %@ Senpai!!" : {
 
     }
   },
