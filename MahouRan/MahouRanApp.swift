@@ -11,7 +11,7 @@ import SwiftUI
 struct MahouRanApp: App {
     var body: some Scene {
         WindowGroup {
-            loadingScreen()
+            LoadingScreen()
         }
     }
 }

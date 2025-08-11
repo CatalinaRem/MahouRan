@@ -1,5 +1,5 @@
 //
-//  loadingScreen.swift
+//  LoadingScreen.swift
 //  MahouRan
 //
 //  Created by Catalina Rem on 28/6/2568 BE.
@@ -13,7 +13,7 @@ let mahouranBackgroundColor = Color(hex: "#EAD7F6")
 let mainColor = Color(hex: "#DF83DB")
 let buttonColor = Color(hex : "#8A29C3")
 
-struct loadingScreen: View {
+struct LoadingScreen: View {
     @State private var isActive: Bool = false
     
     var body: some View {
@@ -38,5 +38,5 @@ struct loadingScreen: View {
 }
 
 #Preview {
-    loadingScreen()
+    LoadingScreen()
 }

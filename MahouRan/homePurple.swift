@@ -1,5 +1,5 @@
 //
-//  homePurple.swift
+//  HomePurple.swift
 //  MahouRan
 //
 //  Created by Catalina Rem on 10/8/25.
