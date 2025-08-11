@@ -12,12 +12,7 @@ struct homePurple: View {
     var body: some View {
         VStack {
             Text("Welcome back, \(username) Senpai!!")
-            HStack {
-                ZStack {
-                    Image("Pui")
-                    Text("Pippo")
-                }
-            }
+            MageCard(image: pippo.image, nameEnglish: pippo.nameEnglish)
         }
     }
 }

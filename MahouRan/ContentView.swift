@@ -12,20 +12,19 @@ struct ContentView: View {
     
     var body: some View {
         HStack {
-                ZStack {
-                    mainColor
+            mainColor
+                .overlay(alignment: .center)
+            {
+                VStack {
                     Image("MahouRanLogo2")
                         .scaledToFit()
-                        .frame(height: 100)
+                    //Blue Mode Button for Mahou Ran Blue
                 }
-                .frame(height: 100)
-            
-            //Blue Mode Button for Mahou Ran Blue
+                }
             
         }
         .background(mainColor)
-        
-        
+        .frame(height: 100)
             TabView
         {
             homePurple()

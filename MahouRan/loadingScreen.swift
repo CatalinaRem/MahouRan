@@ -11,6 +11,8 @@ import SwiftUI
 let startColor = Color(hex: "#D460CF")
 let mahouranBackgroundColor = Color(hex: "#EAD7F6")
 let mainColor = Color(hex: "#DF83DB")
+let buttonColor = Color(hex : "#8A29C3")
+
 struct loadingScreen: View {
     @State private var isActive: Bool = false
     
