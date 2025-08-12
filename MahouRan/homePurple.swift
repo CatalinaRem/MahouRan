@@ -22,6 +22,8 @@ struct HomePurple: View {
             }
             .navigationDestination(isPresented: $showProfile) {
                 MageProfile()
+               //     .toolbar(.hidden, for: .tabBar)
+
             }
         }
     }

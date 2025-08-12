@@ -4,6 +4,9 @@
     "Account" : {
 
     },
+    "Back" : {
+
+    },
     "Home" : {
 
     },
@@ -11,9 +14,6 @@
 
     },
     "Notification" : {
-
-    },
-    "Welcome back, %@ Senpai!!" : {
 
     }
   },
