@@ -9,21 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            HStack {
-                mainColor
-                    .overlay(alignment: .center)
-                {                VStack {
-                    Image("MahouRanLogo2")
-                        .scaledToFit()
-                    //Blue Mode Button for Mahou Ran Blue
-                }
-                }
-                
-            }
-            .background(mainColor)
-            .frame(height: 100)
-            
+        ZStack(alignment: .top) {
+            //Content
             TabView
             {
                 HomePurple()
@@ -47,8 +34,26 @@ struct ContentView: View {
                 UITabBar.appearance().backgroundColor = UIColor(mainColor)
             }
             .tint(Color.yellow)
+        
+            //Header
+            
+            HStack {
+                mainColor
+                    .overlay(alignment: .center)
+                {                VStack {
+                    Image("MahouRanLogo2")
+                        .scaledToFit()
+                    //Blue Mode Button for Mahou Ran Blue
+                }
+                }
+                
+            }
+            .background(mainColor)
+            .frame(height: 100)
+
         }
     }
+ 
 }
 #Preview {
     ContentView()

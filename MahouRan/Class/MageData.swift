@@ -21,5 +21,7 @@ let pippo = WitchModel(
     interests: ["Anime","Manga","Space","Real Estate"],
     nameJapanese: "ピッポ",
     quote: "ป็อก ๆ ต๊าก ~ ป๊อก ๆ",
-    favoriteMenu: ["KFC near Future Park Rangsit"]
+    favoriteMenu: ["KFC near Future Park Rangsit"],
+    title: "The Star Witch of the Seven Sisters",
+    titleThai: "แม่มดแห่งดาวลูกไก่"
 )

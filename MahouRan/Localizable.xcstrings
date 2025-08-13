@@ -15,6 +15,9 @@
     },
     "Notification" : {
 
+    },
+    "Welcome Back, %@ Senpai!!" : {
+
     }
   },
   "version" : "1.1"

@@ -12,22 +12,30 @@ class WitchModel: MageModel, ObservableObject {
     @Published var quote: String
     @Published var favoriteMenu: [String]
     let isFemale: Bool = true
-
+    var title: String
+    var titleThai: String? = nil
+    
     init(id: UUID = UUID(),
          nameThai: String,
          nameEnglish: String,
          image: String,
          magicClass: String? = nil,
          birthDate: String,
-         height: Int? = nil,
+         height: Int,
          mbti: MBTI,
          interests: [String],
          nameJapanese: String,
          quote: String,
-         favoriteMenu: [String]) {
+         favoriteMenu: [String],
+         title : String,
+         titleThai : String? = nil
+    )
+    {
         self.nameJapanese = nameJapanese
         self.quote = quote
         self.favoriteMenu = favoriteMenu
+        self.title = title
+        self.titleThai = titleThai
         super.init(id: id,
                    nameThai: nameThai,
                    nameEnglish: nameEnglish,

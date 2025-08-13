@@ -12,7 +12,7 @@ struct MageProfile: View {
     
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
+            VStack(alignment: .center, spacing: 16) {
                 Button {
                     dismiss()
                 } label: {
@@ -36,8 +36,9 @@ struct MageProfile: View {
                             Text(pippo.nameThai)
                             Text(pippo.nameJapanese)
                         }
+                        Text(pippo.titleThai!)
                     }
-                    .frame(maxWidth: 250, alignment: .leading)
+                    .frame(maxWidth: 600, alignment: .leading)
                 }
             }
             .background(Color(.systemBackground))
@@ -48,6 +49,7 @@ struct MageProfile: View {
             .padding(.horizontal, 16)
             .padding(.bottom, 24)
             .toolbar(.hidden, for: .navigationBar)
+            .padding(.top, 85)
         }
     }
 }
