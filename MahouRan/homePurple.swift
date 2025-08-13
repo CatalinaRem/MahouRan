@@ -26,7 +26,7 @@ struct HomePurple: View {
                         }
                     }
                     .navigationDestination(isPresented: $showProfile) {MageProfile()}
-//--------------------------------------------------------------------
+//-----------------------------------------------------
                     //User Profile
                     HStack {
                         Image(systemName: "person.circle")
@@ -47,15 +47,15 @@ struct HomePurple: View {
                     .background(mainColor)
                     .font(.subheadline)
                     .foregroundStyle(.white)
-//------------------------------------------------------------------
+//-----------------------------------------------------
                     //Announcement form Mahou Ran (CRUD)
                     HStack {
                         Text("Proclamation of the Magic Council")
                         //Blog Post Form Mahou Ran
                     }
                 }
+                .padding(.top, 120)
             }
-            .padding(.top, 120)
         }
     }
 }
