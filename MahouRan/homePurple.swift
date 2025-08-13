@@ -13,18 +13,49 @@ struct HomePurple: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("Welcome Back, \(nameTest) Senpai!!")
-                HStack {
-                MageCard(
-                    image: pippo.image,
-                    nameEnglish: pippo.nameEnglish
-                ) {
-                    showProfile = true
+            ScrollView {
+                VStack() {
+                    Text("Welcome Back, \(nameTest) Senpai!!")
+                    //MageCard Tab
+                    HStack {
+                        MageCard(
+                            image: pippo.image,
+                            nameEnglish: pippo.nameEnglish
+                        ) {
+                            showProfile = true
+                        }
+                    }
+                    .navigationDestination(isPresented: $showProfile) {MageProfile()}
+//--------------------------------------------------------------------
+                    //User Profile
+                    HStack {
+                        Image(systemName: "person.circle")
+                        VStack{
+                            Text(nameTest)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                            Text("Level : 999")
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                            Text("Rank : Expoler")
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                        //Button to QR Code
+                        Text("Test")
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.vertical, 10)
+                    .padding(.horizontal, 20)
+                    .background(mainColor)
+                    .font(.subheadline)
+                    .foregroundStyle(.white)
+//------------------------------------------------------------------
+                    //Announcement form Mahou Ran (CRUD)
+                    HStack {
+                        Text("Proclamation of the Magic Council")
+                        //Blog Post Form Mahou Ran
+                    }
                 }
-           }
-                .navigationDestination(isPresented: $showProfile) {MageProfile()}
             }
+            .padding(.top, 120)
         }
     }
 }

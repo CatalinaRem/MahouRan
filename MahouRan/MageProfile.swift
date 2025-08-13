@@ -42,14 +42,11 @@ struct MageProfile: View {
                 }
             }
             .background(Color(.systemBackground))
-            .safeAreaInset(edge: .top)
-            {
-
-            }
+            .safeAreaInset(edge: .top){}
             .padding(.horizontal, 16)
             .padding(.bottom, 24)
-            .toolbar(.hidden, for: .navigationBar)
             .padding(.top, 85)
+            .toolbar(.hidden, for: .navigationBar)
         }
     }
 }
