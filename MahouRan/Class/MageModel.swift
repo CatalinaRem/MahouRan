@@ -17,7 +17,7 @@ class MageModel {
     var mbti : MBTI
     var interests: [String]
     
-    init(id : UUID? = nil,nameThai: String, nameEnglish: String, image: String,magicClass: String? = nil, birthDate: String, height: Int? = nil, mbti: String, interests: [String]) {
+    init(id : UUID? = nil,nameThai: String, nameEnglish: String, image: String, magicClass: String? = nil, birthDate: String, height: Int? = nil, mbti: String, interests: [String]) {
         self.nameThai = nameThai
         self.nameEnglish = nameEnglish
         self.image = image
