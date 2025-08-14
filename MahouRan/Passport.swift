@@ -1,0 +1,65 @@
+//
+//  Passport.swift
+//  MahouRan
+//
+//  Created by Catalina Rem on 14/8/25.
+//
+
+import SwiftUI
+
+struct Passport: View {
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .center, spacing: 16) {
+                Button {
+                    print("")
+                } label: {
+                    Label("Back", systemImage: "arrow.backward")
+                }
+                .buttonStyle(.borderedProminent)
+                .controlSize(.regular)
+                .tint(buttonColor)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                Text("Don’t forget to Pui scan!")
+                    .font(.system(size: 20))
+                Image("QRCodeTesting")
+                Text("Privilege when scanning")
+                    .font(.title)
+                    .fontWeight(.bold)
+                BenefitCardView(title: "BTS", subtitle: "MM", mainColor: <#T##UIColor#>)
+            }
+            .background(Color(.systemBackground))
+            .safeAreaInset(edge: .top){}
+            .padding(.horizontal, 16)
+            .padding(.bottom, 24)
+            .padding(.top, 85)
+            .toolbar(.hidden, for: .navigationBar)
+        }
+        
+    }
+    struct BenefitCardView: View {
+        var title: String
+        var subtitle: String
+        var mainColor: UIColor
+
+        var body: some View {
+            VStack(alignment: .leading, spacing: 8) {
+                Text("• \(title)")
+                    .font(.title2)
+                Text("   \(subtitle)")
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
+            .background(Color(.secondarySystemBackground))
+            .overlay(
+                RoundedRectangle(cornerRadius: 2)
+                    .stroke(Color(mainColor), lineWidth: 2)
+            )
+        }
+    }
+}
+
+#Preview {
+    Passport()
+}

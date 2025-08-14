@@ -12,7 +12,7 @@ class WitchModel: MageModel, ObservableObject {
     @Published var quote: String
     @Published var favoriteMenu: [String]
     let isFemale: Bool = true
-    var title: String
+    var title: String? = nil
     var titleThai: String? = nil
     
     init(id: UUID = UUID(),
@@ -27,7 +27,7 @@ class WitchModel: MageModel, ObservableObject {
          nameJapanese: String,
          quote: String,
          favoriteMenu: [String],
-         title : String,
+         title : String? = nil,
          titleThai : String? = nil
     )
     {

@@ -39,7 +39,11 @@ struct HomePurple: View {
                                 .frame(maxWidth: .infinity, alignment: .leading)
                         }
                         //Button to QR Code
-                        Text("Test")
+                        Button(action: {}) { Text("Passport")
+                                .padding(8)
+                                .background(buttonColor)
+                                .clipShape(RoundedRectangle(cornerRadius: 8))
+                        }
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.vertical, 10)
