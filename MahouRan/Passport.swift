@@ -13,6 +13,19 @@ struct Passport: View {
     @Binding var showPassport:Bool
     
     var body: some View {
+        HStack {
+            mainColor
+                .overlay(alignment: .center)
+            {                VStack {
+                Image("MahouRanLogo2")
+                    .scaledToFit()
+                //Blue Mode Button for Mahou Ran Blue
+            }
+            }
+            
+        }
+        .background(mainColor)
+        .frame(height: 100)
         ScrollView {
             VStack(alignment: .center, spacing: 16) {
                 Button {
@@ -37,7 +50,6 @@ struct Passport: View {
             .safeAreaInset(edge: .top){}
             .padding(.horizontal, 16)
             .padding(.bottom, 24)
-            .padding(.top, 85)
             .toolbar(.hidden, for: .navigationBar)
         }
         

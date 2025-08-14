@@ -128,6 +128,7 @@ struct MageProfile: View {
             .padding(.horizontal, 16)
             .padding(.bottom, 24)
             .toolbar(.hidden, for: .navigationBar)
+            .padding(.top, 120)
         }
     }
 }

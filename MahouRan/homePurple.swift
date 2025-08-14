@@ -19,15 +19,18 @@ struct HomePurple: View {
                 VStack() {
                     Text("Welcome Back, \(nameTest) Senpai!!")
                     //MageCard Tab
-                    HStack {
-                        MageCard(
-                            image: pippo.image,
-                            nameEnglish: pippo.nameEnglish
-                        ) {
-                            showProfile = true
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 16) { Spacer(minLength: 0)
+                            MageCard(
+                                image: pippo.image,
+                                nameEnglish: pippo.nameEnglish
+                            ) {
+                                showProfile = true
+                            }
+                            Spacer(minLength: 0)
                         }
+                        .navigationDestination(isPresented: $showProfile) {MageProfile()}
                     }
-                    .navigationDestination(isPresented: $showProfile) {MageProfile()}
 //-----------------------------------------------------
                     //User Profile
                     HStack {
