@@ -1,35 +1,235 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "   %@" : {
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " "
+          }
+        }
+      }
+    },
+    "%@ Mahou Ran" : {
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Mahou Ran"
+          }
+        }
+      }
+    },
+    "%lld cm" : {
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld ซม."
+          }
+        }
+      }
+    },
+    "%lld Oshi" : {
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld "
+          }
+        }
+      }
+    },
+    "• %@" : {
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• %@"
+          }
+        }
+      }
+    },
     "Account" : {
-
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "บัญชี"
+          }
+        }
+      }
     },
     "Back" : {
-
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หน้าหลัก"
+          }
+        }
+      }
+    },
+    "Birthday" : {
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "วันเกิด"
+          }
+        }
+      }
+    },
+    "Don’t forget to Pui scan!" : {
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อย่าลืมให้ปุยสแกนก่อนสั่งอาหารนะคะ"
+          }
+        }
+      }
+    },
+    "Favorite Menu" : {
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เมนูโปรด"
+          }
+        }
+      }
+    },
+    "Height" : {
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความสูง"
+          }
+        }
+      }
     },
     "Home" : {
-
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หน้าหลัก"
+          }
+        }
+      }
+    },
+    "Interesting" : {
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เรื่องที่สนใจ"
+          }
+        }
+      }
     },
     "Level : 999" : {
-
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เลเวล : 99"
+          }
+        }
+      }
+    },
+    "MBTI" : {
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MBTI"
+          }
+        }
+      }
     },
     "Member" : {
-
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สมาชิก"
+          }
+        }
+      }
     },
     "Notification" : {
-
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การแจ้งเตือน"
+          }
+        }
+      }
+    },
+    "Passport" : {
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แสกนเข้าประเทศ"
+          }
+        }
+      }
+    },
+    "Privilege when scanning" : {
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สิทธิพิเศษเมื่อสแกน"
+          }
+        }
+      }
     },
     "Proclamation of the Magic Council" : {
-
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ประกาศจากสภาเวทมนต์"
+          }
+        }
+      }
     },
     "Rank : Expoler" : {
-
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ชั้น : นักสำรวจ"
+          }
+        }
+      }
     },
-    "Test" : {
-
+    "Set as Oshi" : {
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เพิ่มเป็นโอชิ"
+          }
+        }
+      }
     },
     "Welcome Back, %@ Senpai!!" : {
-
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ยินดีต้อนรับกลับนะ, รุ่นพี่ %@"
+          }
+        }
+      }
     }
   },
   "version" : "1.1"
