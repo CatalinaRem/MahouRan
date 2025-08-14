@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomePurple: View {
     @State private var showProfile = false
+    @State var showPassport : Bool = false
+    
     var nameTest = "Aqua"
     
     var body: some View {
@@ -39,7 +41,7 @@ struct HomePurple: View {
                                 .frame(maxWidth: .infinity, alignment: .leading)
                         }
                         //Button to QR Code
-                        Button(action: {}) { Text("Passport")
+                        Button(action: {showPassport.toggle()}) { Text("Passport")
                                 .padding(8)
                                 .background(buttonColor)
                                 .clipShape(RoundedRectangle(cornerRadius: 8))
@@ -59,6 +61,8 @@ struct HomePurple: View {
                     }
                 }
                 .padding(.top, 120)
+                .fullScreenCover(isPresented: $showPassport, content: {Passport(showPassport: $showPassport)})
+                
             }
         }
     }

@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct Passport: View {
+    
+    
+    @Binding var showPassport:Bool
+    
     var body: some View {
         ScrollView {
             VStack(alignment: .center, spacing: 16) {
                 Button {
-                    print("")
+                    showPassport = false
                 } label: {
                     Label("Back", systemImage: "arrow.backward")
                 }
@@ -26,7 +30,8 @@ struct Passport: View {
                 Text("Privilege when scanning")
                     .font(.title)
                     .fontWeight(.bold)
-                BenefitCardView(title: "BTS", subtitle: "MM", mainColor: <#T##UIColor#>)
+                BenefitCardView(title: "BTS", subtitle: "MM")
+                BenefitCardView(title: "MRT", subtitle: "SS")
             }
             .background(Color(.systemBackground))
             .safeAreaInset(edge: .top){}
@@ -40,7 +45,6 @@ struct Passport: View {
     struct BenefitCardView: View {
         var title: String
         var subtitle: String
-        var mainColor: UIColor
 
         var body: some View {
             VStack(alignment: .leading, spacing: 8) {
@@ -61,5 +65,5 @@ struct Passport: View {
 }
 
 #Preview {
-    Passport()
+    Passport(showPassport : .constant(true))
 }
