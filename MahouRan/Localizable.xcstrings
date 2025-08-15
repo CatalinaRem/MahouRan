@@ -6,7 +6,7 @@
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : " "
+            "value" : "   "
           }
         }
       }
@@ -36,7 +36,7 @@
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld "
+            "value" : "มี %lld โอชิ"
           }
         }
       }
@@ -57,6 +57,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "บัญชี"
+          }
+        }
+      }
+    },
+    "Apprentice" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นักเวทฝึกหัด"
           }
         }
       }
@@ -141,6 +152,17 @@
         }
       }
     },
+    "Mage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นักเวท"
+          }
+        }
+      }
+    },
     "MBTI" : {
       "localizations" : {
         "th" : {
@@ -157,6 +179,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "สมาชิก"
+          }
+        }
+      }
+    },
+    "Newbie" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "นักเวทมือใหม่"
           }
         }
       }
@@ -227,6 +260,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ยินดีต้อนรับกลับนะ, รุ่นพี่ %@"
+          }
+        }
+      }
+    },
+    "Witch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แม่มด"
           }
         }
       }

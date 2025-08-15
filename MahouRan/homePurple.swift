@@ -27,10 +27,10 @@ struct HomePurple: View {
                             ) {
                                 showProfile = true
                             }
-                            Spacer(minLength: 0)
                         }
-                        .navigationDestination(isPresented: $showProfile) {MageProfile()}
+                        .navigationDestination(isPresented: $showProfile) {MageProfile( witch: pippo)}
                     }
+
 //-----------------------------------------------------
                     //User Profile
                     HStack {
