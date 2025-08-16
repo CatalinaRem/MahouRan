@@ -33,7 +33,7 @@ struct HomePurple: View {
                             }
                             .navigationDestination(isPresented: $showProfile) {
                                 if let witch = selectedWitch {
-                                    MageProfile(witch: witch)
+                                    WitchProfile(witch: witch)
                                 }
                             }
                         }

@@ -17,7 +17,7 @@ struct ContentView: View {
                     .tabItem {
                         Label("Home", systemImage: "house")
                     }
-                Text("Member")
+                MemberPurple()
                     .tabItem {
                         Label("Member", systemImage: "creditcard")
                     }

@@ -43,8 +43,8 @@ struct Passport: View {
                 Text("Privilege when scanning")
                     .font(.title)
                     .fontWeight(.bold)
-                BenefitCardView(title: "BTS", subtitle: "MM")
-                BenefitCardView(title: "MRT", subtitle: "SS")
+                BenefitCardView(title: "BTS", subtitle: "")
+                BenefitCardView(title: "MRT", subtitle: "")
             }
             .background(Color(.systemBackground))
             .safeAreaInset(edge: .top){}

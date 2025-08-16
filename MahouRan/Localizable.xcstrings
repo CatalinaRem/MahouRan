@@ -112,6 +112,9 @@
         }
       }
     },
+    "Gone" : {
+
+    },
     "Height" : {
       "localizations" : {
         "th" : {
@@ -142,7 +145,11 @@
         }
       }
     },
+    "Level : %lld" : {
+
+    },
     "Level : 999" : {
+      "extractionState" : "stale",
       "localizations" : {
         "th" : {
           "stringUnit" : {
@@ -235,6 +242,7 @@
       }
     },
     "Rank : Expoler" : {
+      "extractionState" : "stale",
       "localizations" : {
         "th" : {
           "stringUnit" : {
