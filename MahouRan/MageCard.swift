@@ -14,6 +14,8 @@ struct MageCard: View {
     var onTap: () -> Void = {}
 
     var body: some View {
+        VStack {
+            
             Button(action: {
                 onTap()
             }) {
@@ -37,9 +39,11 @@ struct MageCard: View {
             }
             .buttonStyle(PlainButtonStyle())
             .contentShape(RoundedRectangle(cornerRadius: 12))
+            Text("Gone")
         }
+    }
 }
 
 #Preview {
-    MageCard(image: "Pui", nameEnglish: "Pui", onTap: {print("Text")})
+    MageCard(image: "marry", nameEnglish: "Marry", onTap: {print("Text")})
 }
