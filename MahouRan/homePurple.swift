@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomePurple: View {
     @State private var showProfile = false
+    @State private var selectedWitch: WitchModel? = nil
     @State var showPassport : Bool = false
     
     var nameTest = "Aqua"
