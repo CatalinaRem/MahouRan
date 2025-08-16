@@ -55,7 +55,7 @@ struct MageProfile: View {
                     .frame(maxWidth: 1000, alignment: .leading)
                 }
                 HStack {
-                    Text(witch.title!)
+                    Text(witch.title ?? "Apprentice")
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.horizontal, 0)
                         .padding(.vertical, 0)
@@ -144,5 +144,5 @@ struct MageProfile: View {
 }
 
 #Preview {
-    MageProfile(witch: pippo)
+    MageProfile(witch: hina)
 }

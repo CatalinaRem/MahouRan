@@ -20,15 +20,15 @@ struct HomePurple: View {
                     Text("Welcome Back, \(nameTest) Senpai!!")
                     //MageCard Tab
                     ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 16) { Spacer(minLength: 0)
+                        HStack(spacing: 16) { Spacer(minLength: 0)            
                             MageCard(
-                                image: pippo.image,
-                                nameEnglish: pippo.nameEnglish
+                                image: hina.image,
+                                nameEnglish: hina.nameEnglish
                             ) {
                                 showProfile = true
                             }
                         }
-                        .navigationDestination(isPresented: $showProfile) {MageProfile( witch: pippo)}
+                        .navigationDestination(isPresented: $showProfile) {MageProfile( witch: hina)}
                     }
 
 //-----------------------------------------------------
