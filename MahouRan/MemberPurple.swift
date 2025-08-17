@@ -15,11 +15,12 @@ struct MemberPurple: View {
     var body: some View {
         NavigationStack{
             VStack() {
-                HStack {
+                HStack() {
                     Image("explorer")
                         .resizable()
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .frame(width: 100, height: 100)
-                    VStack {
+                    VStack(alignment: .center) {
                         Image("QRCodeTesting")
                             .resizable()
                             .frame(width: 100, height: 100)
@@ -31,6 +32,8 @@ struct MemberPurple: View {
                         .font(.subheadline)
                         .foregroundStyle(.white)
                     }
+                    .frame(maxWidth: 150, alignment: .trailing)
+                    
                     }
                 HStack {
                     Image(aqua.userImage)
@@ -67,11 +70,34 @@ struct MemberPurple: View {
                     
                 )
                 .padding(.horizontal, 16)
-                .padding(.bottom, 24)
                 }
-            Text("Your Oshi")
+            VStack(alignment: .leading, spacing: 8) {
+                Text("Your Oshi")
+                    .frame(width: 120 , height: 40)
+                    .background(.ultraThinMaterial)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                HStack {
+                    Image(pippo.image)
+                        .resizable()
+                        .frame(width: 70, height: 70)
+                        .clipShape(Circle())
+                    VStack{
+                        Text(pippo.nameEnglish + " Mahou Ran")
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        Text("Last Arrival : 2021/01/01")
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.vertical, 10)
+            .padding(.horizontal, 30)
+            .font(.subheadline)
+                
             
-            .fullScreenCover(isPresented: $showPassport, content: {Passport(showPassport: $showPassport)})
+            
+                .fullScreenCover(isPresented: $showPassport, content: {Passport(showPassport: $showPassport)})
             }
         }
     }

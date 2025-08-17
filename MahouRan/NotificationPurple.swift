@@ -1,0 +1,18 @@
+//
+//  NotificationPurple.swift
+//  MahouRan
+//
+//  Created by Catalina Rem on 17/8/25.
+//
+
+import SwiftUI
+
+struct NotificationPurple: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+#Preview {
+    NotificationPurple()
+}

@@ -102,6 +102,9 @@
         }
       }
     },
+    "Experience : %lld EXP" : {
+
+    },
     "Favorite Menu" : {
       "localizations" : {
         "th" : {
@@ -135,6 +138,9 @@
         }
       }
     },
+    "Infomation" : {
+
+    },
     "Interesting" : {
       "localizations" : {
         "th" : {
@@ -144,6 +150,9 @@
           }
         }
       }
+    },
+    "Last visit : " : {
+
     },
     "Level : %lld" : {
 
@@ -189,6 +198,9 @@
           }
         }
       }
+    },
+    "Member Expired : " : {
+
     },
     "Newbie" : {
       "extractionState" : "manual",
@@ -282,6 +294,9 @@
           }
         }
       }
+    },
+    "Your Oshi" : {
+
     }
   },
   "version" : "1.1"

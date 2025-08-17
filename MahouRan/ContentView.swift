@@ -21,11 +21,11 @@ struct ContentView: View {
                     .tabItem {
                         Label("Member", systemImage: "creditcard")
                     }
-                Text("Notification")
+                NotificationPurple()
                     .tabItem{
                         Label("Notification", systemImage: "bell")
                     }
-                Text("Account")
+                AccountSettingPurple()
                     .tabItem {
                         Label("Account", systemImage: "person.circle")
                     }
