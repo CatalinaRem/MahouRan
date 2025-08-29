@@ -107,7 +107,7 @@ let zerine = WitchModel(
     mbti: .INFJ,
     interests: ["Art","Cat","Movie"],
     nameJapanese: "ゼリン",
-    quote: "เขาว่ากันว่า ถ้่ารุ่นพี่ขอพรกับเซรินจะทำให้กลายเป็นลิง",
+    quote: "เขาว่ากันว่า ถ้ารุ่นพี่ขอพรกับเซรินจะทำให้กลายเป็นลิง",
     favoriteMenu: ["Peach Soda", "Chocolate"],
     title: nil,
     titleThai: nil
