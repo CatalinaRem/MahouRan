@@ -38,7 +38,6 @@ struct HomePurple: View {
                             }
                         }
                     }
-                        //-----------------------------------------------------
                         //User Profile
                         HStack {
                             Image(aqua.userImage)

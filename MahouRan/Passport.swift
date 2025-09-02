@@ -13,7 +13,7 @@ struct Passport: View {
     @Binding var showPassport:Bool
     
     var body: some View {
-        HStack {
+        VStack {
             mainColor
                 .overlay(alignment: .center)
             {                VStack {

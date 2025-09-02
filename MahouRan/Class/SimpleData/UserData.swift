@@ -5,6 +5,8 @@
 //  Created by Catalina Rem on 16/8/25.
 //
 
+// HACK : Used for testing only
+
 import Foundation
 
 struct UserData {

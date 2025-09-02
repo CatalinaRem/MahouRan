@@ -51,6 +51,9 @@
         }
       }
     },
+    "400 รัน" : {
+
+    },
     "Account" : {
       "localizations" : {
         "th" : {
@@ -163,17 +166,6 @@
     "Level : %lld" : {
 
     },
-    "Level : 999" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "เลเวล : 99"
-          }
-        }
-      }
-    },
     "Mage" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -259,16 +251,8 @@
         }
       }
     },
-    "Rank : Expoler" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ชั้น : นักสำรวจ"
-          }
-        }
-      }
+    "Senpai : %@" : {
+
     },
     "Set as Oshi" : {
       "localizations" : {
@@ -302,6 +286,9 @@
       }
     },
     "Your Oshi" : {
+
+    },
+    "เมนู" : {
 
     }
   },
