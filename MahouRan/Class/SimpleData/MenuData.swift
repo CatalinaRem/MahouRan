@@ -8,77 +8,78 @@
 import Foundation
 
 struct MenuModel {
-    var image: String
-    var title: String
-    var price: String
+    let id = UUID()
+    let image: String
+    let itemName: String
+    let itemPrice: String
 }
 
-let MenuData : [MenuModel] = [pangeana , hydrogna , verunde , ignista , babyHooLoo , babyMicey , bacoonButter , ebiRollMidas]
+let allMenu : [MenuModel] = [pangeana , hydrogna , verunde , ignista , babyHooLoo , babyMicey , bacoonButter , ebiRollMidas]
 
 
 let pangeana = MenuModel(
  image: "Pangeana Dura Blanca",
- title: "Pangeana Dura Blanca",
- price: "120 Ran"
+ itemName: "Pangeana Dura Blanca",
+ itemPrice: "120 Ran"
 )
 
 let hydrogna = MenuModel(
     image: "Hydrogna Panthalassa",
-    title: "Hydrogna Panthalassa",
-    price: "120 Ran"
+    itemName: "Hydrogna Panthalassa",
+    itemPrice: "120 Ran"
 )
 
 let verunde = MenuModel(
     image: "Verunde Fantastica",
-    title: "Verunde Fantastica",
-    price: "120 Ran"
+    itemName: "Verunde Fantastica",
+    itemPrice: "120 Ran"
 )
 
 
 let ignista = MenuModel(
     image: "Ignista Incentiana",
-    title: "Ignista Incentiana",
-    price: "120 Ran"
+    itemName: "Ignista Incentiana",
+    itemPrice: "120 Ran"
 )
 
 let babyHooLoo = MenuModel(
     image: "Baby Hooloo",
-    title: "Baby Hooloo",
-    price: "159 Ran"
+    itemName: "Baby Hooloo",
+    itemPrice: "159 Ran"
 )
 
 let babyMicey = MenuModel(
     image: "Baby Micey",
-    title: "Baby Micey",
-    price: "159 Ran"
+    itemName: "Baby Micey",
+    itemPrice: "159 Ran"
 )
 
 let bacoonButter = MenuModel(
     image: "Bacoon Butter",
-    title: "Bacoon Butter",
-    price: "79 Ran"
+    itemName: "Bacoon Butter",
+    itemPrice: "79 Ran"
 )
 
 let ebiRollMidas = MenuModel(
     image: "Ebi Roll Midas",
-    title: "Ebi Roll Midas",
-    price: "120 Ran"
+    itemName: "Ebi Roll Midas",
+    itemPrice: "120 Ran"
 )
 
 let edamane = MenuModel(
     image: "Edamame",
-    title: "Edamame",
-    price: "119 Ran"
+    itemName: "Edamame",
+    itemPrice: "119 Ran"
 )
 
 let sausage = MenuModel(
     image: "Sausage",
-    title: "Sausage",
-    price: "119 Ran"
+    itemName: "Sausage",
+    itemPrice: "119 Ran"
 )
 
 let spaghetti = MenuModel(
     image: "Spaghetti",
-    title: "Spaghetti",
-    price: "249 Ran"
+    itemName: "Spaghetti",
+    itemPrice: "249 Ran"
 )

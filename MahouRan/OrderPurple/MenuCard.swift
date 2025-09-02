@@ -9,8 +9,8 @@ import SwiftUI
 
 struct MenuCard: View {
     let image: String
-    let title: String
-    let price: String
+    let itemName: String
+    let itemPrice: String
     var onTap: () -> Void = {}
 
     var body: some View {
@@ -35,13 +35,13 @@ struct MenuCard: View {
             }
             .buttonStyle(PlainButtonStyle())
             .contentShape(RoundedRectangle(cornerRadius: 12))
-            Text(title)
+            Text(itemName)
                 .frame(maxWidth: 150, alignment: .leading)
-            Text(price)
+            Text(itemPrice)
                 .frame(maxWidth: 150, alignment: .leading)
         }
     }
 }
 #Preview {
-    MenuCard(image: "Edamane", title: "Edamane" , price: "100 รัน", onTap: {print("Text")})
+    MenuCard(image: "Edamane", itemName: "Edamane" , itemPrice: "100 รัน", onTap: {print("Text")})
 }
