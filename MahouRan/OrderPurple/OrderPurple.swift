@@ -37,7 +37,7 @@ struct OrderPurple: View {
                 .background(Color(.systemBackground))
                 .safeAreaInset(edge: .top){}
                 .padding(.horizontal, 16)
-                .padding(.bottom, 30)
+                .padding(.bottom, 70)
                 .toolbar(.hidden, for: .navigationBar)
                 .padding(.top, 160)
             }
@@ -86,7 +86,7 @@ struct OrderPurple: View {
                 .padding()
                 .frame(maxWidth: .infinity)
                 .background(mainColor)
-                .frame(height: 124)
+                .frame(height: 120)
                 
             }
             .ignoresSafeArea()

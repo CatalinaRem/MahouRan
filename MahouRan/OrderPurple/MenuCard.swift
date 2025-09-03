@@ -10,7 +10,7 @@ import SwiftUI
 struct MenuCard: View {
     let image: String
     let itemName: String
-    let itemPrice: String
+    let itemPrice: Double
     var onTap: () -> Void = {}
 
     var body: some View {
@@ -37,11 +37,11 @@ struct MenuCard: View {
             .contentShape(RoundedRectangle(cornerRadius: 12))
             Text(itemName)
                 .frame(maxWidth: 150, alignment: .leading)
-            Text(itemPrice)
+            Text(String(format: "%.2f Ran", itemPrice))
                 .frame(maxWidth: 150, alignment: .leading)
         }
     }
 }
 #Preview {
-    MenuCard(image: "Edamane", itemName: "Edamane" , itemPrice: "100 รัน", onTap: {print("Text")})
+    MenuCard(image: "Edamane", itemName: "Edamane" , itemPrice: 120.0, onTap: {print("Text")})
 }
