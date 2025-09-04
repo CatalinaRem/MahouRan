@@ -38,7 +38,6 @@ struct OrderPurple: View {
                 .safeAreaInset(edge: .top){}
                 .padding(.horizontal, 16)
                 .padding(.bottom, 70)
-                .toolbar(.hidden, for: .navigationBar)
                 .padding(.top, 160)
             }
             //Header
@@ -66,6 +65,7 @@ struct OrderPurple: View {
                 Spacer()
                 HStack {
                     Text("Item")
+                        .accessibilityIdentifier("itemLabel")
                     Spacer()
                     ZStack(alignment: .topTrailing) {
                         Image(systemName: "cart.fill")

@@ -38,4 +38,13 @@ final class MahouRanUITests: XCTestCase {
             XCUIApplication().launch()
         }
     }
+    @MainActor
+    func testOrderPurplePageLaunchesSuccessfully() throws {
+        let app = XCUIApplication()
+        app.launchArguments.append("--UITest-OrderPurple")
+        app.launch()
+
+        // ตรวจสอบว่ามี Text "Item" ปรากฏอยู่จริงในหน้าจอ
+        XCTAssertTrue(app.staticTexts["itemLabel"].exists)
+    }
 }
