@@ -35,6 +35,10 @@ struct ContentView: View {
             }
             .tint(Color.yellow)
         
+            VStack{
+                BetaBanner()
+            }
+            
             //Header
             
             HStack {
@@ -52,9 +56,25 @@ struct ContentView: View {
             .frame(height: 100)
 
         }
+        
+    }
+    struct BetaBanner:View {
+        var body: some View {
+            VStack{
+                Image("MahouRanBetaBanner")
+                    .resizable()
+                    .scaledToFit()
+                    .padding(.top, 580)
+            }
+        }
     }
  
 }
+
+//Beta Banner
+
+
+
 #Preview {
     ContentView()
 }

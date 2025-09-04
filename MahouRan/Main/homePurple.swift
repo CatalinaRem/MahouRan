@@ -67,9 +67,10 @@ struct HomePurple: View {
                         .foregroundStyle(.white)
                         //-----------------------------------------------------
                         //Announcement form Mahou Ran (CRUD)
-                        HStack {
+                        VStack {
                             Text("Proclamation of the Magic Council")
                             //Blog Post Form Mahou Ran
+                            
                         }
                     }
                     .padding(.top, 120)
