@@ -89,6 +89,76 @@
                   startingLineNumber = "0"
                   endingLineNumber = "0">
                </Location>
+               <Location
+                  uuid = "D87BD591-584E-46B6-94EE-F0CCC97B5ED9 - 2242627103c2f346"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MahouRan.WitchModel.__allocating_init(id: Swift.Optional&lt;Foundation.UUID&gt;, nameThai: Swift.String, nameEnglish: Swift.String, image: Swift.String, magicClass: Swift.Optional&lt;Swift.String&gt;, birthDate: Swift.String, height: Swift.Optional&lt;Swift.Int&gt;, mbti: Swift.String, interests: Swift.Array&lt;Swift.String&gt;) -&gt; MahouRan.WitchModel"
+                  moduleName = "MahouRan.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/catalina.rem/Documents/MahouRan/MahouRan/Class/WitchModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "D87BD591-584E-46B6-94EE-F0CCC97B5ED9 - 83c671e1a42194a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MahouRan.WitchModel.init(id: Swift.Optional&lt;Foundation.UUID&gt;, nameThai: Swift.String, nameEnglish: Swift.String, image: Swift.String, magicClass: Swift.Optional&lt;Swift.String&gt;, birthDate: Swift.String, height: Swift.Optional&lt;Swift.Int&gt;, mbti: Swift.String, interests: Swift.Array&lt;Swift.String&gt;) -&gt; MahouRan.WitchModel"
+                  moduleName = "MahouRan.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/catalina.rem/Documents/MahouRan/MahouRan/Class/WitchModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "D87BD591-584E-46B6-94EE-F0CCC97B5ED9 - 733332b3349578f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MahouRan.WitchModel.__ivar_destroyer"
+                  moduleName = "MahouRan.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/catalina.rem/Documents/MahouRan/MahouRan/Class/WitchModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "D87BD591-584E-46B6-94EE-F0CCC97B5ED9 - d6497abd06c247e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MahouRan.WitchModel.deinit"
+                  moduleName = "MahouRan.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/catalina.rem/Documents/MahouRan/MahouRan/Class/WitchModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
+               <Location
+                  uuid = "D87BD591-584E-46B6-94EE-F0CCC97B5ED9 - f30feb39b8220e0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MahouRan.WitchModel.__deallocating_deinit"
+                  moduleName = "MahouRan.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/catalina.rem/Documents/MahouRan/MahouRan/Class/WitchModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
