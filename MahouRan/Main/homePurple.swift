@@ -72,11 +72,17 @@ struct HomePurple: View {
                             //Blog Post Form Mahou Ran
                             
                         }
+                    
                     }
                     .padding(.top, 120)
                     .fullScreenCover(isPresented: $showPassport, content: {Passport(showPassport: $showPassport)})
                     
                 }
+            VStack {
+                BetaBanner()
+            }
+            .padding(.bottom, 20) 
+            .background(mainColor)
             }
         }
     }

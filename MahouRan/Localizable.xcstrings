@@ -54,7 +54,7 @@
     "0" : {
 
     },
-    "120 Ran" : {
+    "200 Ran" : {
 
     },
     "Account" : {
@@ -66,6 +66,9 @@
           }
         }
       }
+    },
+    "Add More" : {
+
     },
     "Apprentice" : {
       "extractionState" : "manual",
@@ -98,6 +101,9 @@
         }
       }
     },
+    "Confirm" : {
+
+    },
     "Don’t forget to Pui scan!" : {
       "localizations" : {
         "th" : {
@@ -107,6 +113,9 @@
           }
         }
       }
+    },
+    "Edit" : {
+
     },
     "Experience : %lld EXP" : {
 
@@ -227,6 +236,9 @@
         }
       }
     },
+    "Order Price" : {
+
+    },
     "Pangeana Dura Blanca" : {
 
     },
@@ -263,6 +275,12 @@
     "Senpai : %@" : {
 
     },
+    "Senpai Order" : {
+
+    },
+    "Service Charge (10%)" : {
+
+    },
     "Set as Oshi" : {
       "localizations" : {
         "th" : {
@@ -272,6 +290,12 @@
           }
         }
       }
+    },
+    "Total" : {
+
+    },
+    "VAT (7%)" : {
+
     },
     "Welcome Back, %@ Senpai!!" : {
       "localizations" : {

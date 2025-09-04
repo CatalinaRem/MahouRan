@@ -34,10 +34,6 @@ struct ContentView: View {
                 UITabBar.appearance().backgroundColor = UIColor(mainColor)
             }
             .tint(Color.yellow)
-        
-            VStack{
-                BetaBanner()
-            }
             
             //Header
             
@@ -58,21 +54,18 @@ struct ContentView: View {
         }
         
     }
-    struct BetaBanner:View {
-        var body: some View {
-            VStack{
-                Image("MahouRanBetaBanner")
-                    .resizable()
-                    .scaledToFit()
-                    .padding(.top, 580)
-            }
-        }
-    }
- 
 }
 
 //Beta Banner
-
+struct BetaBanner:View {
+    var body: some View {
+        VStack{
+            Image("MahouRanBetaBanner")
+                .resizable()
+                .scaledToFit()
+        }
+    }
+}
 
 
 #Preview {
