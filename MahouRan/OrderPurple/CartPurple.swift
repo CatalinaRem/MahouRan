@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+var totalPrice: Double = 200
+let vat : Double = 0.07
+let serviceCharge : Double = 0.1
+var beforeVat: Double = totalPrice * vat
+var beforeServiceCharge: Double = totalPrice * serviceCharge
+var orderPrice: Double = totalPrice - (beforeServiceCharge + beforeVat)
+
+
 struct CartPurple: View {
     
     var body: some View {
@@ -33,9 +41,9 @@ struct CartPurple: View {
 
                         // ขวา: จำนวนเงิน/แต้ม
                         VStack(alignment: .trailing, spacing: 6) {
-                            Text(" รัน")
-                            Text(" รัน")
-                            Text(" รัน")
+                            Text(String(format: "%.2f Ran", orderPrice)) // Order Price
+                            Text(String(format: "%.2f Ran", beforeServiceCharge)) // Service Chargee
+                            Text(String(format: "%.2f Ran", beforeVat)) //Vat
                         }
 
                     }
@@ -47,7 +55,7 @@ struct CartPurple: View {
                         Text("Total")
                             .fontWeight(.semibold)
                         Spacer()
-                        Text("500 รัน")
+                        Text(String(format: "%.2f Ran", totalPrice))
                             .fontWeight(.semibold)
                     }
                 }
