@@ -17,19 +17,29 @@ struct NotificationPurple: View {
 
 struct NotificationPurpleBox: View {
     var body: some View {
-        HStack(spacing: 10.0) {
-            Image("Pangeana Dura Blanca")
-                .resizable()
-                .frame(width: 80, height: 80)
-                .clipShape(RoundedRectangle(cornerRadius: 12))
+        HStack(spacing: 10) {
             VStack(alignment : .leading) {
-                Text("Pangeana Dura Blanca")
-                Text("Edit")
-            }
-            VStack(alignment : .trailing) {
-                Text("200 Ran")
-                    .padding(.horizontal, 9.0)
+                Text("ประกาศจากสภาสูง")
+                    .foregroundStyle(.white)
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .padding(.leading, 20)
+                VStack{
+                    Text("แจ้งเตือนนี้เป็นเพียง คาถาทดสอบ (Alpha) \nโปรดอย่าตกใจ หากได้ยินเสียงกระซิบจากแม่มดนะคะ~ ")
+                        .foregroundStyle(.white)
+                        .font(.caption)
+                        .padding(.leading, 20)
+                }
+                HStack {
+                    Spacer()
+                    Text("12:34 น.")
+                        .foregroundStyle(.white)
+                        .font(.caption)
+                        .opacity(0.75)
+                        .padding(.horizontal, 20)
+                }
                 
+
             }
             
         }
