@@ -111,7 +111,7 @@ struct CartPurple: View {
     
     
     
-
+// Cart Order Box
     struct CartOrderView: View {
         var body: some View {
             HStack(spacing: 10.0) {

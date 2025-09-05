@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OrderPurple: View {
+struct MenuPurpleView: View {
     
     @State private var showMenu = false
     @State private var selectedMenu: MenuModel? = nil
@@ -99,5 +99,5 @@ struct OrderPurple: View {
 
 
 #Preview {
-    OrderPurple()
+    MenuPurpleView()
 }
