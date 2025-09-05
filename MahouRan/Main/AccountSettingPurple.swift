@@ -28,7 +28,7 @@ struct AccountSettingPurple: View {
 
                         Section(header: Text("อื่น ๆ")) {
                             NavigationLink("เกี่ยวกับ Mahou Ran", destination: Text("หน้าโปรไฟล์ยังไม่มา เมี๊ยว~"))
-                            Link("ไปยัง Discord", destination: URL(string: "https://discord.gg/...")!)
+                            Link("ไปยัง Discord", destination: URL(string: "https://discord.com/invite/DTYnRJp35x")!)
                         }
 
                         Section {
