@@ -19,12 +19,13 @@ struct AboutAppPurple: View {
                         dismiss()
                     } label: {
                         Label("Back", systemImage: "arrow.backward")
-                            .buttonStyle(.borderedProminent)
-                            .controlSize(.regular)
-                            .tint(buttonColor)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(.horizontal , 20)
                     }
+                    .buttonStyle(.borderedProminent)
+                    .controlSize(.regular)
+                    .tint(buttonColor)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal , 20)
+
                     Image("MahouRanLogoMahouRanApp")
                         .resizable()
                         .background(mainColor)
