@@ -81,7 +81,7 @@ struct HomePurple: View {
             }
             VStack {
                 //Beta Banner has on ContentView.swift
-                BetaBanner()
+                
             }
         }
     }

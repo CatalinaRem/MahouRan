@@ -9,7 +9,7 @@
 
 import Foundation
 
-let allWitches: [WitchModel] = [pippo , hina , jiro , sera , marry , zerine]
+let allWitches: [WitchModel] = [hina , jiro , sera , marry , zerine]
 
 let pippo = WitchModel(
     id: UUID(),

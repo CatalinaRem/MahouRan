@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		863D66842E0FEB3200DA3698 /* MahouRan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MahouRan.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		863D66912E0FEB3300DA3698 /* MahouRanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MahouRanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		863D669B2E0FEB3300DA3698 /* MahouRanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MahouRanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		863D66842E0FEB3200DA3698 /* MahouRan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MahouRan.app; path = "/Users/catalina.rem/Documents/MahouRan/build/Debug-iphoneos/MahouRan.app"; sourceTree = "<absolute>"; };
+		863D66912E0FEB3300DA3698 /* MahouRanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MahouRanTests.xctest; path = "/Users/catalina.rem/Documents/MahouRan/build/Debug-iphoneos/MahouRan.app/PlugIns/MahouRanTests.xctest"; sourceTree = "<absolute>"; };
+		863D669B2E0FEB3300DA3698 /* MahouRanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MahouRanUITests.xctest; path = "/Users/catalina.rem/Documents/MahouRan/build/Debug-iphoneos/MahouRanUITests-Runner.app/PlugIns/MahouRanUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -92,18 +92,7 @@
 				863D66862E0FEB3200DA3698 /* MahouRan */,
 				863D66942E0FEB3300DA3698 /* MahouRanTests */,
 				863D669E2E0FEB3300DA3698 /* MahouRanUITests */,
-				863D66852E0FEB3200DA3698 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		863D66852E0FEB3200DA3698 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				863D66842E0FEB3200DA3698 /* MahouRan.app */,
-				863D66912E0FEB3300DA3698 /* MahouRanTests.xctest */,
-				863D669B2E0FEB3300DA3698 /* MahouRanUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +200,7 @@
 			mainGroup = 863D667B2E0FEB3200DA3698;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 863D66852E0FEB3200DA3698 /* Products */;
+			productRefGroup = 863D667B2E0FEB3200DA3698;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Passport: View {
     
+    //TODO : Check a count of table on Passport
     
     @Binding var showPassport:Bool
     

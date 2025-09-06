@@ -11,7 +11,7 @@ struct AccountSettingPurple: View {
     
     
     @State private var isNotificationEnabled = true
-    
+    @State var showAbout:Bool = false
     
     var body: some View {
         NavigationStack {
@@ -27,7 +27,7 @@ struct AccountSettingPurple: View {
                         }
 
                         Section(header: Text("อื่น ๆ")) {
-                            NavigationLink("เกี่ยวกับ Mahou Ran", destination: Text("หน้าโปรไฟล์ยังไม่มา เมี๊ยว~"))
+                            NavigationLink("เกี่ยวกับ Mahou Ran", destination: AboutAppPurple())
                             Link("ไปยัง Discord", destination: URL(string: "https://discord.com/invite/DTYnRJp35x")!)
                         }
 
