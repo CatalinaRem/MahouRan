@@ -55,7 +55,7 @@ struct AboutAppPurple: View {
                             .padding(.vertical, 5)
                     }
                 }
-                .padding(.top, 80)
+                .padding(.top, 120)
                 Spacer()
             }
             
