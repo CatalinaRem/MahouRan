@@ -32,7 +32,8 @@ struct AccountSettingPurple: View {
                         }
 
                         Section {
-                            Text("เวอร์ชัน 1.0.0 (Alpha)").foregroundColor(.gray)
+                            Text("เวอร์ชัน 1.0.0 (Alpha)")
+                                .foregroundColor(.gray)
                         }
                     }
                     .navigationTitle("การตั้งค่า")

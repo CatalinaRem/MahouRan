@@ -16,7 +16,7 @@ To ensure everyone enjoys the experience safely and respectfully, we ask that al
 - Please treat our casts with respect and avoid sensitive or obscene topics during your conversation
 - Please help us preserve the joyous atmosphere within the cafe
 - Please do not bring food or beverages from outside with you when you enter the cafe
-- Smoking is not allowed anywhere within the cafe. If you would like to smoke, please do so in t parking lot
+- Smoking is not allowed anywhere within the cafe. If you would like to smoke, please do so in parking lot
 - Criminal activities or activities in similar nature are not allowed anywhere near the cafe
 
 ## Property & Damages

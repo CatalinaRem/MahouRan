@@ -10,6 +10,7 @@ import SwiftUI
 struct AboutAppPurple: View {
     
     @Environment(\.dismiss) var dismiss
+    @State private var showRules = false
     
     var body: some View {
         ZStack {
@@ -39,11 +40,18 @@ struct AboutAppPurple: View {
                     Divider().overlay(Color.gray.opacity(0.8))
                     Text("Design for your magical world")
                         .font(.headline)
-                    Button(action: {}) {
+                    
+                    Button {
+                        showRules = true
+                    } label: {
                         Text("Mahou Ran Rules")
                             .foregroundColor(mainColor)
                             .padding(.vertical, 5)
                     }
+                    .sheet(isPresented: $showRules) {
+                        MahouRanRuleView()
+                    }
+                    
                     Button(action: {}) {
                         Text("Terms of Service")
                             .foregroundColor(mainColor)
