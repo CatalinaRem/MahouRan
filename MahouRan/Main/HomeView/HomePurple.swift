@@ -18,7 +18,7 @@ struct HomePurple: View {
         NavigationStack {
             ScrollView {
                 VStack() {
-                    Text("Welcome Back, \(aqua.firstName) Senpai!!")
+                    Text("Welcome Back, \(currentUser.firstName) Senpai!!")
                     //MageCard Tab
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
@@ -40,16 +40,16 @@ struct HomePurple: View {
                     }
                     //User Profile
                     HStack {
-                        Image(aqua.userImage)
+                        Image(currentUser.userImage)
                             .resizable()
                             .frame(width: 70, height: 70)
                             .clipShape(Circle())
                         VStack{
-                            Text(aqua.firstName + " " + aqua.lastName)
+                            Text(currentUser.firstName + " " + currentUser.lastName)
                                 .frame(maxWidth: .infinity, alignment: .leading)
-                            Text("Level : \(aqua.userXP)")
+                            Text("Level : \(currentUser.userXP)")
                                 .frame(maxWidth: .infinity, alignment: .leading)
-                            Text("Rank : " + aqua.userRank)
+                            Text("Rank : " + currentUser.userRank)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                         }
                         //Button to QR Code

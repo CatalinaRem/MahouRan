@@ -36,14 +36,14 @@ struct MemberPurple: View {
                     
                     }
                 HStack {
-                    Image(aqua.userImage)
+                    Image(currentUser.userImage)
                         .resizable()
                         .frame(width: 70, height: 70)
                         .clipShape(Circle())
                     VStack{
-                        Text(aqua.firstName + " " + aqua.lastName)
+                        Text(currentUser.firstName + " " + currentUser.lastName)
                             .frame(maxWidth: .infinity, alignment: .leading)
-                        Text("Rank : " + aqua.userRank)
+                        Text("Rank : " + currentUser.userRank)
                             .frame(maxWidth: .infinity, alignment: .leading)
                     }
                 }
@@ -55,7 +55,7 @@ struct MemberPurple: View {
                 .foregroundStyle(.white)
                 
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("Experience : \(aqua.userXP) EXP")
+                    Text("Experience : \(currentUser.userXP) EXP")
                     Text("Member Expired : ")
                     Text("Last visit : ")
                 }
@@ -106,3 +106,4 @@ struct MemberPurple: View {
 #Preview {
     MemberPurple()
 }
+

@@ -10,6 +10,7 @@
 import Foundation
 
 struct UserData {
+    let id: UUID = UUID()
     var firstName: String
     var lastName: String
     var fullName: String
@@ -18,7 +19,7 @@ struct UserData {
     var userRank: String
 }
 
-let aqua = UserData(
+var currentUser = UserData(
     firstName: "Aquamarine",
     lastName: "Kasane",
     fullName: "Aquamarine Kasane",

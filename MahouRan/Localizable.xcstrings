@@ -11,6 +11,9 @@
         }
       }
     },
+    "- Physical contact with our cast members is not allowed" : {
+
+    },
     "%@ Mahou Ran" : {
       "localizations" : {
         "th" : {
@@ -110,6 +113,15 @@
     "Confirm" : {
 
     },
+    "Copyright © 2025 Jirayu Prani. All rights reserved." : {
+
+    },
+    "Design for your magical world" : {
+
+    },
+    "Developed by Catalina Rem" : {
+
+    },
     "Don’t forget to Pui scan!" : {
       "localizations" : {
         "th" : {
@@ -135,6 +147,9 @@
           }
         }
       }
+    },
+    "General Rules" : {
+
     },
     "Gone" : {
 
@@ -194,6 +209,15 @@
           }
         }
       }
+    },
+    "Mahou Ran" : {
+
+    },
+    "Mahou Ran is trademarked by Jirayu Prani." : {
+
+    },
+    "Mahou Ran Rules" : {
+
     },
     "MBTI" : {
       "localizations" : {
@@ -255,6 +279,9 @@
         }
       }
     },
+    "Privacy Policy" : {
+
+    },
     "Privilege when scanning" : {
       "localizations" : {
         "th" : {
@@ -294,10 +321,16 @@
         }
       }
     },
+    "Terms of Service" : {
+
+    },
     "Total" : {
 
     },
     "VAT (7%)" : {
+
+    },
+    "Version Alpha 0.0.1" : {
 
     },
     "Welcome Back, %@ Senpai!!" : {

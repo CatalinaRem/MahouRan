@@ -47,7 +47,7 @@ struct MenuPurpleView: View {
                     .overlay(alignment: .center)
                 {                VStack {
                     Image("MahouRanLogo2")
-                    Text("Senpai : \(aqua.firstName)")
+                    Text("Senpai : \(currentUser.firstName)")
                         .font(.system(size: 24, weight: .semibold, design: .default))
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity, alignment: .leading)
