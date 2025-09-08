@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		863D66842E0FEB3200DA3698 /* MahouRan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MahouRan.app; path = "/Users/catalina.rem/Documents/MahouRan/build/Debug-iphoneos/MahouRan.app"; sourceTree = "<absolute>"; };
-		863D66912E0FEB3300DA3698 /* MahouRanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MahouRanTests.xctest; path = "/Users/catalina.rem/Documents/MahouRan/build/Debug-iphoneos/MahouRan.app/PlugIns/MahouRanTests.xctest"; sourceTree = "<absolute>"; };
-		863D669B2E0FEB3300DA3698 /* MahouRanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MahouRanUITests.xctest; path = "/Users/catalina.rem/Documents/MahouRan/build/Debug-iphoneos/MahouRanUITests-Runner.app/PlugIns/MahouRanUITests.xctest"; sourceTree = "<absolute>"; };
+		865D4DCC2E6E7253006F3EEB /* MahouRan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MahouRan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		865D4DCD2E6E7253006F3EEB /* MahouRanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MahouRanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		865D4DCE2E6E7253006F3EEB /* MahouRanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MahouRanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -92,6 +92,9 @@
 				863D66862E0FEB3200DA3698 /* MahouRan */,
 				863D66942E0FEB3300DA3698 /* MahouRanTests */,
 				863D669E2E0FEB3300DA3698 /* MahouRanUITests */,
+				865D4DCC2E6E7253006F3EEB /* MahouRan.app */,
+				865D4DCD2E6E7253006F3EEB /* MahouRanTests.xctest */,
+				865D4DCE2E6E7253006F3EEB /* MahouRanUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,7 +120,7 @@
 			packageProductDependencies = (
 			);
 			productName = MahouRan;
-			productReference = 863D66842E0FEB3200DA3698 /* MahouRan.app */;
+			productReference = 865D4DCC2E6E7253006F3EEB /* MahouRan.app */;
 			productType = "com.apple.product-type.application";
 		};
 		863D66902E0FEB3300DA3698 /* MahouRanTests */ = {
@@ -140,7 +143,7 @@
 			packageProductDependencies = (
 			);
 			productName = MahouRanTests;
-			productReference = 863D66912E0FEB3300DA3698 /* MahouRanTests.xctest */;
+			productReference = 865D4DCD2E6E7253006F3EEB /* MahouRanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		863D669A2E0FEB3300DA3698 /* MahouRanUITests */ = {
@@ -163,7 +166,7 @@
 			packageProductDependencies = (
 			);
 			productName = MahouRanUITests;
-			productReference = 863D669B2E0FEB3300DA3698 /* MahouRanUITests.xctest */;
+			productReference = 865D4DCE2E6E7253006F3EEB /* MahouRanUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
