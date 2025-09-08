@@ -20,7 +20,6 @@ struct Passport: View {
             {                VStack {
                 Image("MahouRanLogo2")
                     .scaledToFit()
-                //Blue Mode Button for Mahou Ran Blue
             }
             }
             

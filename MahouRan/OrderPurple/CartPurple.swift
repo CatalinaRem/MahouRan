@@ -34,7 +34,6 @@ struct CartPurple: View {
                         VStack(alignment: .leading, spacing: 6) {
                             Text("Order Price")
                             Text("Service Charge (10%)")
-                            Text("VAT (7%)")
                         }
 
                         Spacer()
@@ -42,8 +41,7 @@ struct CartPurple: View {
                         // ขวา: จำนวนเงิน/แต้ม
                         VStack(alignment: .trailing, spacing: 6) {
                             Text(String(format: "%.2f Ran", orderPrice)) // Order Price
-                            Text(String(format: "%.2f Ran", beforeServiceCharge)) // Service Chargee
-                            Text(String(format: "%.2f Ran", beforeVat)) //Vat
+                            Text(String(format: "%.2f Ran", beforeServiceCharge)) // Service Charge
                         }
 
                     }
@@ -119,12 +117,17 @@ struct CartPurple: View {
                     .resizable()
                     .frame(width: 80, height: 80)
                     .clipShape(RoundedRectangle(cornerRadius: 12))
+                    
                 VStack(alignment : .leading) {
                     Text("Pangeana Dura Blanca")
+                        .foregroundStyle(Color.white)
+                        .font(.headline)
                     Text("Edit")
                 }
                 VStack(alignment : .trailing) {
                     Text("200 Ran")
+                        .foregroundStyle(Color.white)
+                        .font(.headline)
                         .padding(.horizontal, 9.0)
                     
                 }

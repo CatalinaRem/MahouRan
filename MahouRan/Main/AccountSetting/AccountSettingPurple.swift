@@ -36,7 +36,7 @@ struct AccountSettingPurple: View {
                                 .foregroundColor(.gray)
                         }
                     }
-                    .navigationTitle("การตั้งค่า")
+                    .padding(.top, 100)
                 }
     }
 }
