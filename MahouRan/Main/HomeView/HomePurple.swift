@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct HomePurple: View {
     @State private var showProfile = false
     @State private var selectedWitch: WitchModel? = nil
     @State private var showPassport : Bool = false
+    // @Query(sort: \WitchModel.nameEnglish) var allWitches: [WitchModel]
     
     var nameTest = "Aqua"
     
@@ -22,7 +24,8 @@ struct HomePurple: View {
                     //MageCard Tab
                     ScrollView(.horizontal) {
                         HStack {
-                            ForEach(allWitches, id : \.nameEnglish) { witch in
+                            //MageCard
+                            ForEach(allWitches, id : \.id) { witch in
                                 MageCard(
                                     image: witch.image,
                                     nameEnglish: witch.nameEnglish
