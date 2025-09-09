@@ -23,7 +23,7 @@ struct CartPurple: View {
                 VStack {
                     CartOrderView()
                 }
-                .padding(.top, 160)
+                .padding(.top, 120)
             }
             // Net Order
             VStack {

@@ -20,7 +20,7 @@ struct HomePurple: View {
                 VStack() {
                     Text("Welcome Back, \(currentUser.firstName) Senpai!!")
                     //MageCard Tab
-                    ScrollView(.horizontal, showsIndicators: false) {
+                    ScrollView(.horizontal) {
                         HStack {
                             ForEach(allWitches, id : \.nameEnglish) { witch in
                                 MageCard(

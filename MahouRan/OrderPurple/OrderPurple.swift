@@ -12,7 +12,7 @@ struct MenuPurpleView: View {
     @State private var showMenu = false
     @State private var selectedMenu: MenuModel? = nil
     
-    let columns = [
+    private let columns = [
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
@@ -20,25 +20,27 @@ struct MenuPurpleView: View {
     var body: some View {
         ZStack(alignment: .top) {
             //Content
-            ScrollView {
-                LazyVGrid(columns: columns, spacing: 16) {
-                    ForEach(allMenu, id : \.itemName) { menu in
-                        MenuCard(
-                            image: menu.image,
-                            itemName: menu.itemName,
-                            itemPrice: menu.itemPrice
-                        ) {
-                            selectedMenu = menu
-                            showMenu = true
+            NavigationStack {
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 16) {
+                        ForEach(allMenu, id : \.itemName) { menu in
+                            MenuCard(
+                                image: menu.image,
+                                itemName: menu.itemName,
+                                itemPrice: menu.itemPrice
+                            ) {
+                                selectedMenu = menu
+                                showMenu = true
+                            }
                         }
+                        
                     }
-                    
+                    .background(Color(.systemBackground))
+                    .safeAreaInset(edge: .top){}
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 70)
+                    .padding(.top, 160)
                 }
-                .background(Color(.systemBackground))
-                .safeAreaInset(edge: .top){}
-                .padding(.horizontal, 16)
-                .padding(.bottom, 70)
-                .padding(.top, 160)
             }
             //Header
             
