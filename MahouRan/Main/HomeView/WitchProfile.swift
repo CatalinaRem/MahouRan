@@ -134,8 +134,7 @@ struct WitchProfile: View {
             .safeAreaInset(edge: .top){}
             .padding(.horizontal, 16)
             .padding(.bottom, 24)
-            .toolbar(.hidden, for: .navigationBar)
-            .padding(.top, 120)
+            .padding(.top, 80)
             
         }
         .onAppear() {

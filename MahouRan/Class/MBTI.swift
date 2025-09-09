@@ -5,7 +5,7 @@
 //  Created by Catalina Rem on 10/8/25.
 //
 
-enum MBTI: String{
+enum MBTI: String , Codable{
     case ISTJ, ISFJ, INFJ, INTJ
     case ISTP, ISFP, INFP, INTP
     case ESTP, ESFP, ENFP, ENTP

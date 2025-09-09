@@ -8,6 +8,7 @@
 // HACK : Used for testing only
 
 import Foundation
+import SwiftData
 
 let allWitches: [WitchModel] = [hina , jiro , sera , marry , zerine]
 

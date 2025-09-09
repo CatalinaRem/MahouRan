@@ -5,13 +5,12 @@
 //  Created by Catalina Rem on 10/8/25.
 //
 
-import SwiftUI
-
+import SwiftData
+import Foundation
 
 class WizardModel: MageModel, ObservableObject {
-    @Published var dislike: String?
-    @Published var snack: String
-    let isMale: Bool = true
+    var dislike: String?
+    var snack: String
 
     init(id: UUID = UUID(),
          nameThai: String,

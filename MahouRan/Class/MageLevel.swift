@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum MageLevel: String {
+enum MageLevel: String , Codable {
     case newbie
     case apprentice
     case mage

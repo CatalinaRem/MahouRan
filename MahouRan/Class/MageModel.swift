@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 class MageModel {
     var id : UUID?
     var nameThai: String

@@ -5,13 +5,13 @@
 //  Created by Catalina Rem on 10/8/25.
 //
 
-import SwiftUI
+import SwiftData
+import Foundation
 
-class WitchModel: MageModel, ObservableObject {
-    @Published var nameJapanese: String
-    @Published var quote: String
-    @Published var favoriteMenu: [String]
-    let isFemale: Bool = true
+class WitchModel: MageModel {
+    var nameJapanese: String
+    var quote: String
+    var favoriteMenu: [String]
     var title: String? = nil
     var titleThai: String? = nil
     
@@ -21,7 +21,7 @@ class WitchModel: MageModel, ObservableObject {
          image: String,
          magicClass: String? = nil,
          birthDate: String,
-         height: Int,
+         height: Int?,
          mbti: MBTI,
          interests: [String],
          nameJapanese: String,
@@ -46,4 +46,5 @@ class WitchModel: MageModel, ObservableObject {
                    mbti: mbti.rawValue,
                    interests: interests)
     }
+    
 }
