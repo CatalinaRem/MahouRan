@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct MemberPurple: View {
-    @State var showPassport : Bool = false
+    @State private var showPassport : Bool = false
     
     
     var body: some View {
@@ -24,13 +24,19 @@ struct MemberPurple: View {
                         Image("QRCodeTesting")
                             .resizable()
                             .frame(width: 100, height: 100)
-                        Button(action: {showPassport.toggle()}) { Text("Infomation")
+                        Button
+                        {
+                            showPassport = true
+                        } label : {
+                            Text("Infomation")
                                 .padding(8)
                                 .background(buttonColor)
                                 .clipShape(RoundedRectangle(cornerRadius: 8))
+                                .foregroundStyle(.white)
                         }
-                        .font(.subheadline)
-                        .foregroundStyle(.white)
+                        .sheet(isPresented: $showPassport) {
+                            Passport()
+                        }
                     }
                     .frame(maxWidth: 150, alignment: .trailing)
                     
@@ -94,10 +100,6 @@ struct MemberPurple: View {
             .padding(.vertical, 10)
             .padding(.horizontal, 30)
             .font(.subheadline)
-                
-            
-            
-                .fullScreenCover(isPresented: $showPassport, content: {Passport(showPassport: $showPassport)})
             }
         }
     }

@@ -10,7 +10,7 @@ import SwiftUI
 struct HomePurple: View {
     @State private var showProfile = false
     @State private var selectedWitch: WitchModel? = nil
-    @State var showPassport : Bool = false
+    @State private var showPassport : Bool = false
     
     var nameTest = "Aqua"
     
@@ -52,11 +52,20 @@ struct HomePurple: View {
                             Text("Rank : " + currentUser.userRank)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                         }
+                        .foregroundStyle(.white)
                         //Button to QR Code
-                        Button(action: {showPassport.toggle()}) { Text("Passport")
+                        Button
+                        {
+                            showPassport = true
+                        } label : {
+                            Text("Passport")
                                 .padding(8)
                                 .background(buttonColor)
                                 .clipShape(RoundedRectangle(cornerRadius: 8))
+                                .foregroundStyle(.white)
+                        }
+                        .sheet(isPresented: $showPassport) {
+                            Passport()
                         }
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -64,7 +73,6 @@ struct HomePurple: View {
                     .padding(.horizontal, 20)
                     .background(mainColor)
                     .font(.subheadline)
-                    .foregroundStyle(.white)
                     //-----------------------------------------------------
                     //Announcement form Mahou Ran (CRUD)
                     VStack {
@@ -76,8 +84,6 @@ struct HomePurple: View {
                     
                 }
                 .padding(.top, 120)
-                .fullScreenCover(isPresented: $showPassport, content: {Passport(showPassport: $showPassport)})
-                
             }
             VStack {
                 //Beta Banner has on ContentView.swift

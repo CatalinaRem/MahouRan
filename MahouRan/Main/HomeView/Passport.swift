@@ -11,7 +11,7 @@ struct Passport: View {
     
     //TODO : Check a count of table on Passport
     
-    @Binding var showPassport:Bool
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         VStack {
@@ -29,7 +29,7 @@ struct Passport: View {
         ScrollView {
             VStack(alignment: .center, spacing: 16) {
                 Button {
-                    showPassport = false
+                    dismiss()
                 } label: {
                     Label("Back", systemImage: "arrow.backward")
                 }
@@ -77,5 +77,5 @@ struct Passport: View {
 }
 
 #Preview {
-    Passport(showPassport : .constant(true))
+    Passport()
 }
