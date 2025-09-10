@@ -1,5 +1,5 @@
 //
-//  OrderPurple.swift
+//  MenuPurpleView.swift
 //  MahouRan
 //
 //  Created by Catalina Rem on 2/9/25.
