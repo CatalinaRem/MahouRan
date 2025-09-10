@@ -11,6 +11,7 @@ struct MenuPurpleView: View {
     
     @State private var showMenu = false
     @State private var selectedMenu: MenuModel? = nil
+    @State private var isShowOrder: Bool = false
     
     private let columns = [
         GridItem(.flexible()),
@@ -36,7 +37,7 @@ struct MenuPurpleView: View {
                         
                     }
                     .safeAreaInset(edge: .top){}
-                    .padding(.horizontal, 16)
+                    .padding(.horizontal, 24)
                     .padding(.bottom, 70)
                     .padding(.top, 160)
                 }
@@ -72,7 +73,7 @@ struct MenuPurpleView: View {
                     ZStack(alignment: .topTrailing) {
                         Image(systemName: "cart.fill")
                             .font(.title2)
-
+                        
                         Text("0")
                             .font(.caption2)
                             .foregroundColor(.white)
@@ -81,7 +82,6 @@ struct MenuPurpleView: View {
                             .clipShape(Circle())
                             .offset(x: 8, y: -8)
                     }
-
                 }
                 .font(.headline)
                 .foregroundStyle(.white)
@@ -92,6 +92,14 @@ struct MenuPurpleView: View {
                 
             }
             .ignoresSafeArea()
+            .onTapGesture {
+                isShowOrder = true
+            }
+            .sheet(isPresented: $isShowOrder) {
+                CartPurple()
+                    .presentationDetents([.medium, .large])
+                    .presentationDragIndicator(.visible)
+            }
 
         }
 
