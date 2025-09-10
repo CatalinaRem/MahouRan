@@ -18,6 +18,7 @@ var orderPrice: Double = totalPrice - (beforeServiceCharge + beforeVat)
 struct CartPurple: View {
     
     @Environment(\.dismiss) private var dismiss
+    var onCloseAll: () -> Void = {}
 
     
     var body: some View {
@@ -84,6 +85,7 @@ struct CartPurple: View {
                             .padding(.leading, 16)
                         HStack {
                             Button {
+                                onCloseAll()
                                 dismiss()
                             } label : {
                                 Text("Back")

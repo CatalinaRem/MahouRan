@@ -13,6 +13,7 @@ struct MenuPurpleView: View {
     @State private var selectedMenu: MenuModel? = nil
     @State private var isShowOrder: Bool = false
     @Environment(\.dismiss) private var dismiss
+    var onCloseAll: () -> Void = {}
     
     private let columns = [
         GridItem(.flexible()),
@@ -97,7 +98,7 @@ struct MenuPurpleView: View {
                 isShowOrder = true
             }
             .sheet(isPresented: $isShowOrder) {
-                CartPurple()
+                CartPurple(onCloseAll: onCloseAll)
                     .presentationDetents([.medium, .large])
                     .presentationDragIndicator(.visible)
             }

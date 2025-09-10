@@ -15,6 +15,7 @@ struct Passport: View {
     @AppStorage("isDeveloper") private var isDeveloper: Bool = false
     @State var showMenu: Bool = false
     
+    var onCloseAll: () -> Void = {}
     
     var body: some View {
         VStack {
@@ -55,7 +56,10 @@ struct Passport: View {
                         Text("Menu")
                             .underline()
                             .fullScreenCover(isPresented: $showMenu) {
-                                MenuPurpleView()
+                                MenuPurpleView(onCloseAll: { 
+                                    showMenu = false
+                                    onCloseAll()
+                                })
                             }
                     }
                 }
