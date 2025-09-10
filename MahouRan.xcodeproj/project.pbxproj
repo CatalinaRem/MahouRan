@@ -175,7 +175,7 @@
 		863D667C2E0FEB3200DA3698 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
@@ -410,7 +410,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NFG7QQZUC7;
+				DEVELOPMENT_TEAM = P6625WKG57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Mahou Ran";
@@ -449,7 +449,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NFG7QQZUC7;
+				DEVELOPMENT_TEAM = P6625WKG57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Mahou Ran";
@@ -577,7 +577,7 @@
 				863D66A42E0FEB3300DA3698 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		863D66A52E0FEB3300DA3698 /* Build configuration list for PBXNativeTarget "MahouRan" */ = {
 			isa = XCConfigurationList;
@@ -586,7 +586,7 @@
 				863D66A72E0FEB3300DA3698 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		863D66A82E0FEB3300DA3698 /* Build configuration list for PBXNativeTarget "MahouRanTests" */ = {
 			isa = XCConfigurationList;
@@ -595,7 +595,7 @@
 				863D66AA2E0FEB3300DA3698 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		863D66AB2E0FEB3300DA3698 /* Build configuration list for PBXNativeTarget "MahouRanUITests" */ = {
 			isa = XCConfigurationList;
@@ -604,7 +604,7 @@
 				863D66AD2E0FEB3300DA3698 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

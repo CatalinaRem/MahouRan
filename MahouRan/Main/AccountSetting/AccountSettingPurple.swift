@@ -9,9 +9,13 @@ import SwiftUI
 
 struct AccountSettingPurple: View {
     
-    
     @State private var isNotificationEnabled = true
-    @State var showAbout:Bool = false
+    @State private var showAbout:Bool = false
+    @State private var tapCount = 0
+    @State private var showDeveloperMode = false
+    @AppStorage("isDeveloper") var isDeveloper: Bool = false
+    @AppStorage("isBeta") var isBeta: Bool = true
+
     
     var body: some View {
         NavigationStack {
@@ -34,6 +38,23 @@ struct AccountSettingPurple: View {
                         Section {
                             Text("เวอร์ชัน 1.0.0 (Alpha)")
                                 .foregroundColor(.gray)
+                                .onTapGesture {
+                                    tapCount += 1
+                                    if tapCount == 5 {
+                                        withAnimation {
+                                            showDeveloperMode.toggle()
+                                        }
+                                        tapCount = 0
+                                    }
+                                }
+                        }
+                        if showDeveloperMode {
+                            Section(header: Text("Developer Mode")) {
+                                Toggle("Developer Mode", isOn: $isDeveloper)
+                                    .onChange(of: isDeveloper) { _, newValue in
+                                        updateDeveloperFlags(newValue)
+                                    }
+                            }
                         }
                     }
                     .padding(.top, 100)

@@ -135,6 +135,9 @@
     "Edit" : {
 
     },
+    "Email" : {
+
+    },
     "Experience : %lld EXP" : {
 
     },
@@ -147,6 +150,9 @@
           }
         }
       }
+    },
+    "Forgot Password" : {
+
     },
     "General Rules" : {
 
@@ -197,6 +203,9 @@
 
     },
     "Level : %lld" : {
+
+    },
+    "Login" : {
 
     },
     "Mage" : {
@@ -279,6 +288,9 @@
         }
       }
     },
+    "Password" : {
+
+    },
     "Privacy Policy" : {
 
     },
@@ -321,13 +333,13 @@
         }
       }
     },
+    "Sign Up" : {
+
+    },
     "Terms of Service" : {
 
     },
     "Total" : {
-
-    },
-    "VAT (7%)" : {
 
     },
     "Version Alpha 0.0.1" : {
@@ -343,6 +355,9 @@
         }
       }
     },
+    "Welcome to Mahou Ran" : {
+
+    },
     "Witch" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -355,9 +370,6 @@
       }
     },
     "Your Oshi" : {
-
-    },
-    "การตั้งค่า" : {
 
     },
     "เกี่ยวกับ Mahou Ran" : {

@@ -12,6 +12,9 @@ struct Passport: View {
     //TODO : Check a count of table on Passport
     
     @Environment(\.dismiss) private var dismiss
+    @AppStorage("isDeveloper") private var isa: Bool = false
+    @State var showMenu: Bool = false
+    
     
     var body: some View {
         VStack {
@@ -45,6 +48,15 @@ struct Passport: View {
                     .fontWeight(.bold)
                 BenefitCardView(title: "BTS", subtitle: "")
                 BenefitCardView(title: "MRT", subtitle: "")
+                    Button {
+                        showMenu = true
+                    } label: {
+                        Text("Menu")
+                            .underline()
+//                            .fullScreenCover(isPresented: $showMenu) {
+ //                               OrderPurple()
+  //                          }
+                    }
             }
             .background(Color(.systemBackground))
             .safeAreaInset(edge: .top){}

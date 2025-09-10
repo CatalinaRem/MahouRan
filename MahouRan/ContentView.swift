@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @AppStorage("isBeta") private var isBeta: Bool = false    
+    
+    
     var body: some View {
         ZStack(alignment: .top) {
             //Content
@@ -45,8 +49,19 @@ struct ContentView: View {
                         .scaledToFit()
                     //Blue Mode Button for Mahou Ran Blue
                 }
+                    if isBeta {
+                        Text("Beta Preview")
+                            .font(.system(size: 14, weight: .bold, design: .default))
+                            .foregroundColor(.white)
+                            .offset(x: 100, y: 37.5)
+                    }
+                    else {
+                        Text("Developer Mode")
+                            .font(.system(size: 14, weight: .bold, design: .default))
+                            .foregroundColor(.white)
+                            .offset(x: 100, y: 37.5)
+                    }
                 }
-                
             }
             .background(mainColor)
             .frame(height: 100)

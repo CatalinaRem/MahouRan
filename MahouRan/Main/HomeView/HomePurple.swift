@@ -12,6 +12,7 @@ struct HomePurple: View {
     @State private var showProfile = false
     @State private var selectedWitch: WitchModel? = nil
     @State private var showPassport : Bool = false
+    @AppStorage("isBeta") private var isBeta: Bool = false
     // @Query(sort: \WitchModel.nameEnglish) var allWitches: [WitchModel]
     
     var nameTest = "Aqua"
@@ -40,6 +41,7 @@ struct HomePurple: View {
                                 }
                             }
                         }
+                        .frame(height: 150)
                     }
                     //User Profile
                     HStack {
@@ -89,8 +91,9 @@ struct HomePurple: View {
                 .padding(.top, 120)
             }
             VStack {
-                //Beta Banner has on ContentView.swift
-                
+                if isBeta {
+                    BetaBanner()
+                }
             }
         }
     }
