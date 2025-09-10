@@ -22,7 +22,7 @@ struct MenuPurpleView: View {
             //Content
             NavigationStack {
                 ScrollView {
-                    LazyVGrid(columns: columns, spacing: 16) {
+                    LazyVGrid(columns: columns, alignment: .leading, spacing: 16) {
                         ForEach(allMenu, id : \.itemName) { menu in
                             MenuCard(
                                 image: menu.image,

@@ -14,7 +14,7 @@ struct MenuCard: View {
     var onTap: () -> Void = {}
 
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 8) {
             Button(action: {
                 onTap()
             }) {
@@ -28,14 +28,17 @@ struct MenuCard: View {
             }
             .buttonStyle(PlainButtonStyle())
             .contentShape(RoundedRectangle(cornerRadius: 12))
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 2) {
                 Text(itemName)
-                    .frame(maxWidth: 150, alignment: .leading)
+                    .multilineTextAlignment(.leading)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     .foregroundStyle(Color.primary)
                 Text(String(format: "%.2f Ran", itemPrice))
-                    .frame(maxWidth: 150, alignment: .leading)
+                    .multilineTextAlignment(.leading)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     .foregroundStyle(Color.primary)
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
 }
