@@ -23,22 +23,19 @@ struct MenuCard: View {
                     .scaledToFill()
                     .frame(width: 150, height: 150)
                     .clipShape(RoundedRectangle(cornerRadius: 12))
-                
-                
-            
-//                    .overlay(alignment: .bottom) {
-//                        VStack(alignment: .leading, spacing: 2) {
-//                        }
-//                    }
-                
+
                 
             }
             .buttonStyle(PlainButtonStyle())
             .contentShape(RoundedRectangle(cornerRadius: 12))
-            Text(itemName)
-                .frame(maxWidth: 150, alignment: .leading)
-            Text(String(format: "%.2f Ran", itemPrice))
-                .frame(maxWidth: 150, alignment: .leading)
+            VStack(alignment: .leading) {
+                Text(itemName)
+                    .frame(maxWidth: 150, alignment: .leading)
+                    .foregroundStyle(Color.primary)
+                Text(String(format: "%.2f Ran", itemPrice))
+                    .frame(maxWidth: 150, alignment: .leading)
+                    .foregroundStyle(Color.primary)
+            }
         }
     }
 }

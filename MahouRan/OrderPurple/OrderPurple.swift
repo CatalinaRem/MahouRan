@@ -35,7 +35,6 @@ struct MenuPurpleView: View {
                         }
                         
                     }
-                    .background(Color(.systemBackground))
                     .safeAreaInset(edge: .top){}
                     .padding(.horizontal, 16)
                     .padding(.bottom, 70)
@@ -46,14 +45,15 @@ struct MenuPurpleView: View {
             
             HStack {
                 mainColor
-                    .overlay(alignment: .center)
-                {                VStack {
+                    .overlay{
+                        VStack(alignment: .center) {
                     Image("MahouRanLogo2")
                     Text("Senpai : \(currentUser.firstName)")
                         .font(.system(size: 24, weight: .semibold, design: .default))
-                        .foregroundColor(.white)
+                        .foregroundStyle(.white)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 16)
+                    
                 }
                 }
                 
@@ -84,7 +84,7 @@ struct MenuPurpleView: View {
 
                 }
                 .font(.headline)
-                .foregroundColor(.white)
+                .foregroundStyle(.white)
                 .padding()
                 .frame(maxWidth: .infinity)
                 .background(mainColor)

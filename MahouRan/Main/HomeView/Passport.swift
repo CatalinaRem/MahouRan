@@ -30,7 +30,7 @@ struct Passport: View {
         .background(mainColor)
         .frame(height: 100)
         ScrollView {
-            VStack(alignment: .center, spacing: 16) {
+            VStack {
                 Button {
                     dismiss()
                 } label: {
@@ -53,16 +53,15 @@ struct Passport: View {
                     } label: {
                         Text("Menu")
                             .underline()
-//                            .fullScreenCover(isPresented: $showMenu) {
- //                               OrderPurple()
-  //                          }
+                          .fullScreenCover(isPresented: $showMenu) {
+                              MenuPurpleView()
+                      }
                     }
             }
             .background(Color(.systemBackground))
             .safeAreaInset(edge: .top){}
             .padding(.horizontal, 16)
             .padding(.bottom, 24)
-            .toolbar(.hidden, for: .navigationBar)
         }
         
     }
