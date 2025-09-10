@@ -12,6 +12,7 @@ struct MenuPurpleView: View {
     @State private var showMenu = false
     @State private var selectedMenu: MenuModel? = nil
     @State private var isShowOrder: Bool = false
+    @Environment(\.dismiss) private var dismiss
     
     private let columns = [
         GridItem(.flexible()),

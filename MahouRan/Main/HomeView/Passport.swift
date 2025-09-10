@@ -12,7 +12,7 @@ struct Passport: View {
     //TODO : Check a count of table on Passport
     
     @Environment(\.dismiss) private var dismiss
-    @AppStorage("isDeveloper") private var isa: Bool = false
+    @AppStorage("isDeveloper") private var isDeveloper: Bool = false
     @State var showMenu: Bool = false
     
     
@@ -48,15 +48,17 @@ struct Passport: View {
                     .fontWeight(.bold)
                 BenefitCardView(title: "BTS", subtitle: "")
                 BenefitCardView(title: "MRT", subtitle: "")
+                if isDeveloper {
                     Button {
                         showMenu = true
                     } label: {
                         Text("Menu")
                             .underline()
-                          .fullScreenCover(isPresented: $showMenu) {
-                              MenuPurpleView()
-                      }
+                            .fullScreenCover(isPresented: $showMenu) {
+                                MenuPurpleView()
+                            }
                     }
+                }
             }
             .background(Color(.systemBackground))
             .safeAreaInset(edge: .top){}

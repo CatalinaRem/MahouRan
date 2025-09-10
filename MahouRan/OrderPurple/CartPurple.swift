@@ -17,94 +17,102 @@ var orderPrice: Double = totalPrice - (beforeServiceCharge + beforeVat)
 
 struct CartPurple: View {
     
+    @Environment(\.dismiss) private var dismiss
+
+    
     var body: some View {
-        ZStack(alignment: .top) {
-            ScrollView {
+        NavigationStack {
+            ZStack(alignment: .top) {
+                ScrollView {
+                    VStack {
+                        CartOrderView()
+                    }
+                    .padding(.top, 120)
+                }
+                // Net Order
                 VStack {
-                    CartOrderView()
-                }
-                .padding(.top, 120)
-            }
-            // Net Order
-            VStack {
-                Spacer()
-                VStack(spacing: 8) {
-                    HStack(alignment: .top) {
-                        // ซ้าย: รายการ label
-                        VStack(alignment: .leading, spacing: 6) {
-                            Text("Order Price")
-                            Text("Service Charge (10%)")
-                        }
-
-                        Spacer()
-
-                        // ขวา: จำนวนเงิน/แต้ม
-                        VStack(alignment: .trailing, spacing: 6) {
-                            Text(String(format: "%.2f Ran", orderPrice)) // Order Price
-                            Text(String(format: "%.2f Ran", beforeServiceCharge)) // Service Charge
-                        }
-
-                    }
-
-                    Divider().overlay(Color.white.opacity(0.8))
-
-                    // บรรทัดสรุปทั้งหมด
-                    HStack {
-                        Text("Total")
-                            .fontWeight(.semibold)
-                        Spacer()
-                        Text(String(format: "%.2f Ran", totalPrice))
-                            .fontWeight(.semibold)
-                    }
-                }
-                .font(.headline)
-                .foregroundColor(.white)
-                .padding()
-                .frame(maxWidth: .infinity)
-                .background(mainColor)
-            }
-            .ignoresSafeArea(.keyboard)
-            
-            
-            
-            //Header
-            
-            HStack {
-                mainColor
-                    .overlay(alignment: .center)
-                {VStack {
-                    Text("Senpai Order")
-                        .font(.system(size: 24, weight: .semibold, design: .default))
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.leading, 16)
-                    HStack {
-                        Button(action: {}) { Text("Add More")
-                                .foregroundColor(Color.red)
-                                .padding(8)
-                                .background(Color.white)
-                                .clipShape(RoundedRectangle(cornerRadius: 8))
-                                .offset(x: 20)
+                    Spacer()
+                    VStack(spacing: 8) {
+                        HStack(alignment: .top) {
+                            // ซ้าย: รายการ label
+                            VStack(alignment: .leading, spacing: 6) {
+                                Text("Order Price")
+                                Text("Service Charge (10%)")
+                            }
+                            
                             Spacer()
                             
+                            // ขวา: จำนวนเงิน/แต้ม
+                            VStack(alignment: .trailing, spacing: 6) {
+                                Text(String(format: "%.2f Ran", orderPrice)) // Order Price
+                                Text(String(format: "%.2f Ran", beforeServiceCharge)) // Service Charge
+                            }
+                            
                         }
-                        Button(action: {}) { Text("Confirm")
-                                .foregroundColor(Color.white)
-                                .padding(8)
-                                .background(buttonColor)
-                                .clipShape(RoundedRectangle(cornerRadius: 8))
-                                .offset(x: -20)
+                        
+                        Divider().overlay(Color.white.opacity(0.8))
+                        
+                        // บรรทัดสรุปทั้งหมด
+                        HStack {
+                            Text("Total")
+                                .fontWeight(.semibold)
+                            Spacer()
+                            Text(String(format: "%.2f Ran", totalPrice))
+                                .fontWeight(.semibold)
                         }
                     }
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(mainColor)
                 }
-                }
+                .ignoresSafeArea(.keyboard)
                 
+                
+                
+                //Header
+                
+                HStack {
+                    mainColor
+                        .overlay(alignment: .center)
+                    {VStack {
+                        Text("Senpai Order")
+                            .font(.system(size: 24, weight: .semibold, design: .default))
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.leading, 16)
+                        HStack {
+                            Button {
+                                dismiss()
+                            } label : {
+                                Text("Back")
+                                    .foregroundStyle(Color.white)
+                                    .padding(8)
+                                    .background(buttonColor)
+                                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                                    .padding(.horizontal, 16)
+                            }
+                            
+                            Spacer()
+                            Button(action: {}) { Text("Confirm")
+                                    .foregroundStyle(Color.white)
+                                    .padding(8)
+                                    .background(buttonColor)
+                                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                                    .padding(.horizontal, 16)
+                            }
+                        }
+                    }
+                    }
+                    
+                }
+                .background(mainColor)
+                .frame(height: 100)
             }
-            .background(mainColor)
-            .frame(height: 100)
+            .frame(maxWidth : .infinity, maxHeight: .infinity)
+            .background(mahouranBackgroundColor)
         }
-        .frame(maxWidth : .infinity, maxHeight: .infinity)
-        .background(mahouranBackgroundColor)
     }
     
     
