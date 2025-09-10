@@ -36,7 +36,7 @@ struct AccountSettingPurple: View {
                         }
 
                         Section {
-                            Text("เวอร์ชัน 1.0.0 (Alpha)")
+                            Text("เวอร์ชัน 0.0.1 (Alpha)")
                                 .foregroundColor(.gray)
                                 .onTapGesture {
                                     tapCount += 1

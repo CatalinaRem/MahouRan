@@ -12,7 +12,7 @@ struct HomePurple: View {
     @State private var showProfile = false
     @State private var selectedWitch: WitchModel? = nil
     @State private var showPassport : Bool = false
-    @AppStorage("isBeta") private var isBeta: Bool = false
+    @AppStorage("isBeta") private var isBeta: Bool = true
     // @Query(sort: \WitchModel.nameEnglish) var allWitches: [WitchModel]
     
     var nameTest = "Aqua"
@@ -91,7 +91,7 @@ struct HomePurple: View {
                 .padding(.top, 120)
             }
             VStack {
-                if isBeta {
+                if isBeta == true {
                     BetaBanner()
                 }
             }

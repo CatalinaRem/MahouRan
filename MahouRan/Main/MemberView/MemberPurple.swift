@@ -35,7 +35,7 @@ struct MemberPurple: View {
                                 .foregroundStyle(.white)
                         }
                         .sheet(isPresented: $showPassport) {
-                            Passport()
+                            Passport(onCloseAll: { showPassport = false })
                         }
                     }
                     .frame(maxWidth: 150, alignment: .trailing)

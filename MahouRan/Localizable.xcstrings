@@ -76,9 +76,6 @@
         }
       }
     },
-    "Add More" : {
-
-    },
     "Apprentice" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -100,6 +97,9 @@
         }
       }
     },
+    "Beta Preview" : {
+
+    },
     "Birthday" : {
       "localizations" : {
         "th" : {
@@ -120,6 +120,9 @@
 
     },
     "Developed by Catalina Rem" : {
+
+    },
+    "Developer Mode" : {
 
     },
     "Don’t forget to Pui scan!" : {
@@ -249,6 +252,9 @@
       }
     },
     "Member Expired : " : {
+
+    },
+    "Menu" : {
 
     },
     "Newbie" : {

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @AppStorage("isBeta") private var isBeta: Bool = true
+    @AppStorage("isBeta") private var isBeta: Bool = false
     
     
     var body: some View {
