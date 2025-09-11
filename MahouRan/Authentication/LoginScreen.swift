@@ -14,6 +14,7 @@ struct LoginScreen: View {
     @State private var password: String = ""
     @State private var loginStatus: String = ""
     @State private var willRegister : Bool = false
+    @FocusState private var isInputActive: Bool
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
@@ -39,6 +40,7 @@ struct LoginScreen: View {
                 .autocapitalization(.none)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .clipShape(RoundedRectangle(cornerRadius: 4))
+                .focused($isInputActive)
             SecureField("Password", text: $password)
                 .textContentType(.password)
                 .autocapitalization(.none)
@@ -46,6 +48,7 @@ struct LoginScreen: View {
                 .font(.body)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .clipShape(RoundedRectangle(cornerRadius: 4))
+                .focused($isInputActive)
             HStack {
                 Spacer()
                 Button{
@@ -78,20 +81,11 @@ struct LoginScreen: View {
                             .clipShape(RoundedRectangle(cornerRadius: 8))
                             .foregroundStyle(buttonColor)
                     }
-                    if !isDeveloper {
-                        Button {
-                            dismiss()
-                        } label: {
-                            Text("Exit")
-                                .padding(8)
-                                .frame(maxWidth: .infinity)
-                                .background(Color.white)
-                                .clipShape(RoundedRectangle(cornerRadius: 8))
-                                .foregroundStyle(buttonColor)
-                        }
-                    }
                 }
             }
+        }
+        .onTapGesture {
+            isInputActive = false
         }
         .padding(20)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -100,7 +94,10 @@ struct LoginScreen: View {
         .sheet(isPresented: $willRegister) {
             NameRegister()
         }
+        
     }
+    
+    
 }
 
 
