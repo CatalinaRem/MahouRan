@@ -13,6 +13,8 @@ struct LoginScreen: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var loginStatus: String = ""
+    @State private var willRegister : Bool = false
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         VStack {
@@ -67,9 +69,20 @@ struct LoginScreen: View {
                             .foregroundStyle(.white)
                     }
                     Button {
-                        print("User is signup.") //Testing
+                        willRegister = true
                     } label: {
-                            Text("Sign Up")
+                        Text("Sign Up")
+                            .padding(8)
+                            .frame(maxWidth: .infinity)
+                            .background(Color.white)
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                            .foregroundStyle(buttonColor)
+                    }
+                    if !isDeveloper {
+                        Button {
+                            dismiss()
+                        } label: {
+                            Text("Exit")
                                 .padding(8)
                                 .frame(maxWidth: .infinity)
                                 .background(Color.white)
@@ -79,11 +92,16 @@ struct LoginScreen: View {
                     }
                 }
             }
+        }
         .padding(20)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(startColor)
+        .toolbar(.hidden, for: .navigationBar)
+        .sheet(isPresented: $willRegister) {
+            NameRegister()
         }
     }
+}
 
 
 #Preview {

@@ -33,6 +33,7 @@ struct NameRegister: View {
             .navigationTitle(Text("Name and Birthday"))
             .navigationBarTitleDisplayMode(.large)
         }
+        
     }
 }
 

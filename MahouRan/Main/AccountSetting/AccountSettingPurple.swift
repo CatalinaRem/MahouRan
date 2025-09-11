@@ -49,11 +49,12 @@ struct AccountSettingPurple: View {
                                 }
                         }
                         if showDeveloperMode {
-                            Section(header: Text("Developer Mode")) {
+                            Section(header: Text("Developer Only")) {
                                 Toggle("Developer Mode", isOn: $isDeveloper)
                                     .onChange(of: isDeveloper) { _, newValue in
                                         updateDeveloperFlags(newValue)
                                     }
+                                NavigationLink("Login Screen", destination: LoginScreen())
                             }
                         }
                     }
