@@ -57,7 +57,6 @@ struct HomePurple: View {
                             Text("Rank : " + currentUser.userRank)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                         }
-                        .foregroundStyle(.white)
                         //Button to QR Code
                         Button
                         {

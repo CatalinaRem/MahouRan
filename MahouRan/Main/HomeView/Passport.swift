@@ -38,7 +38,6 @@ struct Passport: View {
                     Label("Back", systemImage: "arrow.backward")
                 }
                 .buttonStyle(.borderedProminent)
-                .controlSize(.regular)
                 .tint(buttonColor)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 Text("Don’t forget to Pui scan!")
@@ -64,11 +63,10 @@ struct Passport: View {
                     }
                 }
             }
-            .background(Color(.systemBackground))
-            .safeAreaInset(edge: .top){}
             .padding(.horizontal, 16)
             .padding(.bottom, 24)
         }
+        .background(Color(.systemBackground))
         
     }
     struct BenefitCardView: View {
@@ -90,6 +88,7 @@ struct Passport: View {
                     .stroke(Color(mainColor), lineWidth: 2)
             )
         }
+        
     }
 }
 

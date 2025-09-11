@@ -44,6 +44,7 @@ struct MenuPurpleView: View {
                     .padding(.top, 160)
                 }
             }
+            .background(.ultraThinMaterial)
             //Header
             
             HStack {
