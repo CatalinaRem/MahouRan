@@ -16,6 +16,7 @@ struct LoginScreen: View {
     @State private var willRegister : Bool = false
     @FocusState private var isInputActive: Bool
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.modelContext) private var context
     
     var body: some View {
         VStack {

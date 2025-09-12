@@ -72,15 +72,7 @@ struct ContentView: View {
 }
 
 //Beta Banner
-struct BetaBanner:View {
-    var body: some View {
-        VStack{
-            Image("MahouRanBetaBanner")
-                .resizable()
-                .scaledToFit()
-        }
-    }
-}
+
 
 
 #Preview {
