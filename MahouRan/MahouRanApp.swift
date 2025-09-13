@@ -12,7 +12,6 @@ struct MahouRanApp: App {
     var body: some Scene {
         WindowGroup {
             LoadingScreen()
-            .modelContainer(for: WitchModel.self)
         }
     }
 }

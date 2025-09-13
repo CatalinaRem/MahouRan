@@ -20,7 +20,7 @@ struct NameRegister: View {
     }()
 
     @FocusState private var focusedField: Field?
-    private enum Field { case given, family }
+    private enum Field { case given }
 
     private var isFormValid: Bool {
         !givenName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
@@ -28,7 +28,7 @@ struct NameRegister: View {
 
     private var dateRange: ClosedRange<Date> {
         let gregorian = Calendar(identifier: .gregorian)
-        let start = gregorian.date(from: DateComponents(year: 1900, month: 1, day: 1))!
+        let start = gregorian.date(from: DateComponents(year: 1975, month: 1, day: 1))!
         return start...Date()
     }
 
